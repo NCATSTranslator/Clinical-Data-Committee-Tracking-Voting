@@ -1,9 +1,8 @@
 
-Project work through workflow discussed in the 04/09/2021 clinical working group meeting.
-
-![Alt text](docs/drugDiscoveryWorkflow.png?raw=true "Workflow")
+## Project work through workflow discussed in the 04/09/2021 clinical working group meeting.
 
 ### Potential workflow steps as illustrated in the document below
+![Alt text](docs/drugDiscoveryWorkflow.png?raw=true "Workflow")
 
 
 ### Preliminary steps (rough draft, to be revisited)
