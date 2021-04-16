@@ -1,7 +1,6 @@
 
 Project work through workflow discussed in the 04/09/2021 clinical working group meeting.
 
-You can also use relative paths like
 ![Alt text](docs/drugDiscoveryWorkflow.png?raw=true "Workflow")
 
 ### Potential workflow steps as illustrated in the document below
