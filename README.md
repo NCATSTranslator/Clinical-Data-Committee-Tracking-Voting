@@ -1,5 +1,5 @@
 # Clinical-Data-Committee-Tracking-Voting
-Weekly meetings on Fridays, 3 pm ET.
+Biweekly meetings on Wednesdays, 3 pm ET.
 After initial formation - roster should be maintained at the consortium level Translator Committees & Working Groups
 |Committee Member Name|Committee Member Team|Role|Email|
 |--|--|--|--|
