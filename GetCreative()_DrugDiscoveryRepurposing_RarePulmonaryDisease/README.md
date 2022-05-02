@@ -18,6 +18,8 @@ This effort is related to the TACT priority of ‘ARA Inference / Query Expansio
 - lymphangioleiomyomatosis (MONDO:0011705)
 - idiopathic pulmonary fibrosis (MONDO:0008345)
 
+* Related CURIES: disorder of lung (SCTID: 19829001), lower respiratory tract disorder (MONDO:0000270)
+
 ### Original Biological Relevancy Questions
 
 1. mRNA transcript expressed in disease relevant tissues/states?
