@@ -20,6 +20,12 @@ This effort is related to the TACT priority of ‘ARA Inference / Query Expansio
 
 * Related CURIES: disorder of lung (SCTID: 19829001), lower respiratory tract disorder (MONDO:0000270)
 
+### SMEs
+
+- Dr. Michael Knowles, UNC Chapel Hill
+- Dr. Margaret Leigh, UNC Chapel Hill
+- Dr. Joel Moss, NHLBI
+
 ### Original Biological Relevancy Questions
 
 1. mRNA transcript expressed in disease relevant tissues/states?
