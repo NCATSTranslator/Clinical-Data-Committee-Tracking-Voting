@@ -72,6 +72,6 @@ This effort is related to the TACT priority of ‘ARA Inference / Query Expansio
 
 *Workflow Path: Option D
 
-1. What drugs treat Disease X?
+1. What drugs are associated with Disease X in the real world or are known to treat Disease X?
 2. What genes are regulated by those drugs?
 3. What drugs regulate those genes in the same way?
