@@ -75,3 +75,9 @@ This effort is related to the TACT priority of ‘ARA Inference / Query Expansio
 1. What drugs are associated with Disease X in the real world or are known to treat Disease X?
 2. What genes are regulated by those drugs?
 3. What drugs regulate those genes in the same way?
+
+*Workflow Path: Option E
+
+1. What tissues are related to Disease X?
+2. What genes are expressed in those tissues?
+3. What drugs target those genes? 
