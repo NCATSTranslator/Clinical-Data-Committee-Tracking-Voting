@@ -39,10 +39,39 @@ This effort is related to the TACT priority of ‘ARA Inference / Query Expansio
 
 *Essentially reversed and modified a bit
 
-1. Are there marketed drugs for Disease X? If so, is there real-world evidence for the use of these drugs in the treatment of Disease X?
-2. Are there drugs in clinical trials for Disease X? If so, is there real-world evidence for the use of these drugs for any indication?
-3. What are the protein targets of the marketed and trial drugs?
-4. Is there pre-clinical or genetic data linking the targets to Disease X?
-5. Is there literature linking the targets to Disease X?
-6. Is there literature linking the targets to Disease X-related phenotypes?
-7. Are targets expressed in disease-relevant tissues?
+*Workflow Path: Option A
+
+1. What drugs are associated with Disease X in the real world?
+2. Are there marketed drugs for Disease X? Mark and exclude.
+3. Are there drugs in clinical trials for Disease X? Mark and exclude
+4. What are the gene/protein targets of the remaining drugs?
+6. Is there pre-clinical or genetic data linking the targets to Disease X?
+7. Is there literature linking the targets to Disease X?
+8. Is there literature linking the targets to Disease X-related phenotypes?
+9. Are the targets expressed in disease-relevant tissues?
+
+*Workflow Path: Option B
+
+1. What drugs are associated with Disease X in the real world?
+2. Are there marketed drugs for Disease X? Mark and exclude.
+3. Are there drugs in clinical trials for Disease X? Mark and exclude
+4. What are the gene/protein targets of the remaining drugs?
+5. Are there other drugs that target those proteins?
+6. If so:
+  a. is there pre-clinical or genetic data linking the targets to Disease X?
+  b. Is there literature linking the targets to Disease X?
+  c. Is there literature linking the targets to Disease X-related phenotypes?
+  d. Are the targets expressed in disease-relevant tissues?
+
+*Workflow Path: Option C
+
+1. What drugs are associated with Disease X in the real world or are known to treat Disease X?
+2. What are the gene/protein targets of those drugs?
+3. What tissues are those genes/proteins expressed in?
+4. What diseases are associated with those tissues?
+
+*Workflow Path: Option D
+
+1. What drugs treat Disease X?
+2. What genes are regulated by those drugs?
+3. What drugs regulate those genes in the same way?
