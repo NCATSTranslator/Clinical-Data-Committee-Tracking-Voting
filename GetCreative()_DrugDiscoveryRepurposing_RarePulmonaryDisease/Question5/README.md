@@ -2,4 +2,4 @@
 
 ## Question 5
 
-Is there literature linking the targets to Disease X?
+Are there other drugs that target those proteins?
