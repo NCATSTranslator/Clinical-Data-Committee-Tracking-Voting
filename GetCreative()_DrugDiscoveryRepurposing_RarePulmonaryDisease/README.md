@@ -53,9 +53,9 @@ This effort is related to the TACT priority of ‘ARA Inference / Query Expansio
 *Workflow Path: Option B*
 
 1. What drugs are associated with Disease X in the real world?
-2. Are there marketed drugs for Disease X? Mark and exclude.
-3. Are there drugs in clinical trials for Disease X? Mark and exclude
-4. What are the gene/protein targets of the remaining drugs?
+~2. Are there marketed drugs for Disease X? Mark and exclude.~ Inferred by ARA.
+~3. Are there drugs in clinical trials for Disease X? Mark and exclude.~ Inferred by ARA.
+4. What are the gene/protein targets of ~the remaining~ those drugs?
 5. Are there other drugs that target those proteins?
 6. If so:
 - is there pre-clinical or genetic data linking the targets to Disease X?
