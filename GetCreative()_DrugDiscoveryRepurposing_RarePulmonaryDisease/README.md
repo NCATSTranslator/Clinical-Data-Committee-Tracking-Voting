@@ -53,8 +53,8 @@ This effort is related to the TACT priority of ‘ARA Inference / Query Expansio
 *Workflow Path: Option B*
 
 1. What drugs are associated with Disease X in the real world?
-~2. Are there marketed drugs for Disease X? Mark and exclude.~ Inferred by ARA.
-~3. Are there drugs in clinical trials for Disease X? Mark and exclude.~ Inferred by ARA.
+~2. Are there marketed drugs for Disease X? Mark and exclude.~ Inferred by ARA OR invoke workflow runner 'not filtering' by edge type or node/edge attribute.
+~3. Are there drugs in clinical trials for Disease X? Mark and exclude.~ Inferred by ARA OR invoke workflow runner 'not filtering' by edge type or node/edge attribute.
 4. What are the gene/protein targets of ~the remaining~ those drugs?
 5. Are there other drugs that target those proteins?
 6. If so:
