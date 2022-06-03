@@ -24,7 +24,6 @@ This effort is related to the TACT priority of ‘ARA Inference / Query Expansio
 
 - Dr. Michael Knowles, UNC Chapel Hill
 - Dr. Margaret Leigh, UNC Chapel Hill
-- Dr. Joel Moss, NHLBI
 
 ### Original Biological Relevancy Questions
 
