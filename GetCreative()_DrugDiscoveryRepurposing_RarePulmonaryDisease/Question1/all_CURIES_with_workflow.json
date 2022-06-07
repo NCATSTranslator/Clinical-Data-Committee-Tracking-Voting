@@ -1,0 +1,52 @@
+{
+  "message": {
+    "query_graph": {
+      "edges": {
+        "e0": {
+          "object": "n1",
+          "predicates": [
+            "biolink:has_real_world_evidence_of_association_with"
+          ],
+          "subject": "n0"
+        }
+      },
+      "nodes": {
+        "n0": {
+          "categories": [
+            "biolink:DiseaseOrPhenotypicFeature"
+          ],
+          "ids": [
+            "MONDO:0016575",
+            "MONDO:0009061",
+            "MONDO:0018956",
+            "MONDO:0011705",
+            "MONDO:0008345"
+          ],
+          "name": [
+            "primary ciliary dyskinesia",
+            "cystic fibrosis",
+            "idiopathic bronchiectasis",
+            "lymphangioleiomyomatosis",
+            "idiopathic pulmonary fibrosis"
+          ]
+        },
+        "n1": {
+          "categories": [
+            "biolink:ChemicalEntity"
+          ]
+        }
+      }
+    }
+  },
+  "workflow": [
+    {
+      "id": "lookup"
+    },
+    {
+      "id": "overlay_connect_knodes"
+    },
+    {
+      "id": "score"
+    }
+  ]
+}
