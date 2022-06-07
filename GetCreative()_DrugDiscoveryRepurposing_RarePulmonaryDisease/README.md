@@ -49,7 +49,7 @@ This effort is related to the TACT priority of ‘ARA Inference / Query Expansio
 8. ~Is there literature linking the targets to Disease X-related phenotypes?~
 9. ~Are the targets expressed in disease-relevant tissues?~
 
-*Workflow Path: Option B*
+*Workflow Path: Option B+*
 
 1. What drugs are associated with Disease X in the real world?
 2. ~Are there marketed drugs for Disease X? Mark and exclude.~ Inferred by ARA OR invoke workflow runner 'not filtering' by edge type or node/edge attribute.
