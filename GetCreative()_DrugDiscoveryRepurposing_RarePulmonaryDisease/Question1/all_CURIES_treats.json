@@ -24,12 +24,11 @@
 				"e0": {
 					"subject": "n0",
 					"object": "n1",
-					"predicates": ["biolink:treats"]
+					"predicates": ["biolink:has_real_world_evidence_of_association_with"]
 				}
 			}
 		}
 	}
 }
 
-PK = 54cc4ff1-b1fe-4a8a-9173-735bf5830f32 (posted to ARS)
-PK = seems to get stuck at 46% complete (posted to ARAX)
+
