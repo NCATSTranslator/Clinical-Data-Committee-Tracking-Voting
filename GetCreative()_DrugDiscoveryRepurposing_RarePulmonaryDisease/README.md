@@ -51,12 +51,13 @@ This effort is related to the TACT priority of ‘ARA Inference / Query Expansio
 
 *Workflow Path: Option B+*
 
-1. What drugs (chemical entities) are associated with Disease X in the real world?
+1. What drugs (chemical entities) are associated with Dease X in the real world?
+- See [this folder](https://github.com/NCATSTranslator/Clinical-Data-Committee-Tracking-Voting/tree/main/GetCreative()_DrugDiscoveryRepurposing_RarePulmonaryDisease/Question1)
 2. ~Are there marketed drugs for Disease X? Mark and exclude.~ Inferred by ARA OR invoke workflow runner 'not filtering' by edge type or node/edge attribute for 'FDA approved'.
 3. ~Are there drugs in clinical trials for Disease X? Mark and exclude.~ Inferred by ARA OR invoke workflow runner 'not filtering' by edge type or node/edge attribute for 'in Clinical Trials'.
 4. What are the gene/protein targets of ~the remaining~ those drugs?
 5. Are there other drugs that target those proteins?
-6. If so:
+6. If so, for additional evidence and/or ranking/grouping:
 - is there pre-clinical or genetic data linking the targets to Disease X?
 - is there literature linking the targets to Disease X?
 - is there literature linking the targets to Disease X-related phenotypes?
