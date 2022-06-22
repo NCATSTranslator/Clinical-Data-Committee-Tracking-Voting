@@ -23,8 +23,8 @@
                     "predicates": ["biolink:has_real_world_evidence_of_association_with"]
                 },
                 "e02": {
-                    "subject": "n2",
-                    "object": "n1",
+                    "subject": "n1",
+                    "object": "n2",
                     "predicates": ["biolink:increases_activity_of"]
                 },
                 "e03": {
