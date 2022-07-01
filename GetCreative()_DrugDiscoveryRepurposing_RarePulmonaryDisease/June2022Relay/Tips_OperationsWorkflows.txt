@@ -1,0 +1,7 @@
+Tips from David K. on Operations and Workflows:
+
+I’m working on a document that may help here: https://github.com/NCATSTranslator/translator-developer-documentation/pull/5
+As for a practical “how to use the operations”, I would recommend using the workflow builder at arax.ncats.io (little checklist icon on the top of the UI). You can construct a query graph with the first icon, then add operations using the second via the “use in workflow” icon.
+
+The O/W repo has a description of each operations: https://github.com/NCATSTranslator/OperationsAndWorkflows/tree/main/docs
+If you’re still having trouble getting it to do what you want it to, I’m more than happy to help construct queries too.
