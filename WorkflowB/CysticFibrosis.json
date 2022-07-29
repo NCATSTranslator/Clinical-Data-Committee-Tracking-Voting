@@ -1,0 +1,91 @@
+{
+  "workflow": [
+    {
+      "id": "fill"
+    },
+    {
+      "id": "filter_kgraph_discrete_kedge_attribute",
+      "parameters": {
+        "edge_attribute": "biolink:knowledge_source",
+        "remove_value": "infores:semmeddb"
+      }
+    },
+    {
+      "id": "overlay_compute_ngd",
+      "parameters": {
+        "virtual_relation_label": "N1",
+        "qnode_keys": [
+          "n0",
+          "n1"
+        ]
+      }
+    },
+    {
+      "id": "bind"
+    },
+    {
+      "id": "complete_results"
+    },
+    {
+      "id": "score"
+    },
+    {
+      "id": "filter_results_top_n",
+      "parameters": {
+        "max_results": 100
+      }
+    }
+  ],
+  "message": {
+    "query_graph": {
+      "nodes": {
+        "n0": {
+          "ids": [
+            "MONDO:0009061"
+          ],
+          "categories": [
+            "biolink:DiseaseOrPhenotypicFeature"
+          ]
+        },
+        "n1": {
+          "categories": [
+            "biolink:DiseaseOrPhenotypicFeature"
+          ]
+        },
+        "n2": {
+          "categories": [
+            "biolink:Gene"
+          ]
+        },
+        "n3": {
+          "categories": [
+            "biolink:ChemicalEntity"
+          ]
+        }
+      },
+      "edges": {
+        "e01": {
+          "subject": "n0",
+          "object": "n1",
+          "predicates": [
+            "biolink:has_real_world_evidence_of_association_with"
+          ]
+        },
+        "e02": {
+          "subject": "n2",
+          "object": "n1",
+          "predicates": [
+            "biolink:gene_associated_with_condition"
+          ]
+        },
+        "e03": {
+          "subject": "n3",
+          "object": "n2",
+          "predicates": [
+            "biolink:physically_interacts_with"
+          ]
+        }
+      }
+    }
+  }
+}
