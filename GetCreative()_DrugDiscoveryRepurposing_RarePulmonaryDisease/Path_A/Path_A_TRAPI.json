@@ -1,1 +1,64 @@
-
+{
+	"edges": {
+		"N1": {
+			"constraints": [],
+			"object": "n1",
+			"predicates": [
+				"biolink:has_normalized_google_distance_with"
+			],
+			"subject": "n0"
+		},
+		"e0": {
+			"constraints": [],
+			"exclude": false,
+			"object": "n1",
+			"predicates": [
+				"biolink:has_real_world_evidence_of_association_with"
+			],
+			"subject": "n0"
+		},
+		"e1": {
+			"constraints": [],
+			"exclude": false,
+			"object": "n2",
+			"subject": "n1"
+		},
+		"e2": {
+			"constraints": [],
+			"exclude": false,
+			"object": "n2",
+			"subject": "n3"
+		}
+	},
+	"nodes": {
+		"n0": {
+			"constraints": [],
+			"ids": [
+				"MONDO:0009061"
+			],
+			"is_set": false
+		},
+		"n1": {
+			"categories": [
+				"biolink:ChemicalEntity"
+			],
+			"constraints": [],
+			"is_set": false
+		},
+		"n2": {
+			"categories": [
+				"biolink:Gene",
+				"biolink:Protein"
+			],
+			"constraints": [],
+			"is_set": false
+		},
+		"n3": {
+			"categories": [
+				"biolink:ChemicalEntity"
+			],
+			"constraints": [],
+			"is_set": false
+		}
+	}
+}
