@@ -1,1 +1,110 @@
-
+{
+	"edges": {
+		"F1": {
+			"constraints": [],
+			"object": "n1",
+			"predicates": [
+				"biolink:has_fisher_exact_test_p_value_with"
+			],
+			"subject": "n0"
+		},
+		"J2": {
+			"constraints": [],
+			"object": "n2",
+			"predicates": [
+				"biolink:has_fisher_exact_test_p_value_with"
+			],
+			"subject": "n1"
+		},
+		"J3": {
+			"constraints": [],
+			"object": "n3",
+			"predicates": [
+				"biolink:has_fisher_exact_test_p_value_with"
+			],
+			"subject": "n2"
+		},
+		"N1": {
+			"constraints": [],
+			"object": "n1",
+			"predicates": [
+				"biolink:has_normalized_google_distance_with"
+			],
+			"subject": "n0"
+		},
+		"N2": {
+			"constraints": [],
+			"object": "n2",
+			"predicates": [
+				"biolink:has_normalized_google_distance_with"
+			],
+			"subject": "n1"
+		},
+		"N3": {
+			"constraints": [],
+			"object": "n3",
+			"predicates": [
+				"biolink:has_normalized_google_distance_with"
+			],
+			"subject": "n2"
+		},
+		"e01": {
+			"constraints": [],
+			"object": "n1",
+			"predicates": [
+				"biolink:has_real_world_evidence_of_association_with"
+			],
+			"subject": "n0"
+		},
+		"e02": {
+			"constraints": [],
+			"object": "n1",
+			"predicates": [
+				"biolink:gene_associated_with_condition"
+			],
+			"subject": "n2"
+		},
+		"e03": {
+			"constraints": [],
+			"object": "n2",
+			"predicates": [
+				"biolink:physically_interacts_with"
+			],
+			"subject": "n3"
+		}
+	},
+	"nodes": {
+		"n0": {
+			"categories": [
+				"biolink:DiseaseOrPhenotypicFeature"
+			],
+			"constraints": [],
+			"ids": [
+				"MONDO:0009061"
+			],
+			"is_set": false,
+			"name": "MONDO:0009061"
+		},
+		"n1": {
+			"categories": [
+				"biolink:DiseaseOrPhenotypicFeature"
+			],
+			"constraints": [],
+			"is_set": false
+		},
+		"n2": {
+			"categories": [
+				"biolink:Gene"
+			],
+			"constraints": [],
+			"is_set": false
+		},
+		"n3": {
+			"categories": [
+				"biolink:ChemicalEntity"
+			],
+			"constraints": [],
+			"is_set": false
+		}
+	}
+}
