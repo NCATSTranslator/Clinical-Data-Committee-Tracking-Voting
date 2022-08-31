@@ -1,1 +1,72 @@
 
+https://github.com/NCATSTranslator/testing/issues/227
+
+TRAPI Query
+
+{
+  "workflow": [],
+  "message": {
+    "query_graph": {
+      "edges": {
+        "e0": {
+          "subject": "n0",
+          "object": "n1"
+        },
+        "e1": {
+          "subject": "n2",
+          "object": "n1",
+          "exclude": true   #<<---------------- This is the key part
+        }
+      },
+      "nodes": {
+        "n0": {
+          "ids": [
+            "MONDO:0011849"
+          ],
+          "is_set": false,
+          "name": "MONDO:0011849"
+        },
+        "n1": {
+          "is_set": false,
+          "categories": [
+            "biolink:Gene"
+          ]
+        },
+        "n2": {
+          "ids": [
+            "MONDO:0005083"
+          ],
+          "is_set": false,
+          "name": "MONDO:0005083"
+        }
+      }
+    }
+  }
+}
+
+ARAXi (wrapped in TRAPI)
+
+{
+  "message": {},
+  "operations": {
+    "actions": [
+      "# This program creates two query nodes and a query edge between them, looks for matching edges in the KG,",
+      "# overlays NGD metrics, and returns the top 30 results",
+      "add_qnode(ids=MONDO:0011849, key=n0)",
+      "add_qnode(categories=biolink:Gene, key=n1)",
+      "add_qnode(ids=MONDO:0005083, key=n2)",
+      "add_qedge(subject=n0, object=n1, key=e0)",
+      "add_qedge(subject=n2, object=n1, key=e1, exclude=true)",
+      "expand()",
+      "resultify()",
+      "filter_results(action=limit_number_of_results, max_results=30)",
+      ""
+    ]
+  },
+  "submitter": "ARAX GUI",
+  "stream_progress": true,
+  "query_options": {
+    "kp_timeout": "30",
+    "prune_threshold": "50"
+  }
+}
