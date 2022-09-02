@@ -1,0 +1,81 @@
+**Example Query**
+
+Disease-Gene edge
+
+{
+    "message": {
+        "query_graph": {
+            "edges": {
+                "e01": {
+                    "subject": "n0",
+                    "object": "n1",
+                    "predicates": [
+                        "biolink:related_to"
+                    ]
+                }
+            },
+            "nodes": {
+                "n0": {
+                    "categories": [
+                        "biolink:Gene"
+                    ]
+                },
+                "n1": {
+                    "ids": [
+                        "UMLS:C0457334"
+                    ]
+                }
+            }
+        }
+    }
+}
+
+**Example Edge Attributes**
+
+"e29": {
+	"predicate": "biolink:expression_decreased_by",
+	"subject": "ENSG00000141510",
+	"object": "UMLS:C0457334",
+	"attributes": [
+		{
+			"attribute_type_id": "Log probability",
+			"original_attribute_name": null,
+			"value": -2.4834967518143416,
+			"value_type_id": "biolink:has_confidence_level",
+			"attribute_source": null,
+			"value_url": null,
+			"description": "Closer log probability is to zero the more probable the relationship."
+		},
+		{
+			"attribute_type_id": "biolink:primary_knowledge_source",
+			"original_attribute_name": null,
+			"value": "infores:connections-hypothesis",
+			"value_type_id": "biolink:InformationResource",
+			"attribute_source": "infores:connections-hypothesis",
+			"value_url": "http://chp.thayer.dartmouth.edu",
+			"description": "The Connections Hypothesis Provider (CHP Learn Module) from NCATS Translator."
+		},
+		{
+			"attribute_type_id": "biolink:supporting_data_source",
+			"original_attribute_name": null,
+			"value": "infores:disgenet",
+			"value_type_id": "biolink:InformationResource",
+			"attribute_source": "infores:connections-hypothesis",
+			"value_url": "https://www.disgenet.org",
+			"description": "DisGeNET is a discovery platform containing one of the largest publicly available collections of genes and variants associated to human diseases."
+		},
+		{
+			"attribute_type_id": "biolink:supporting_data_source",
+			"original_attribute_name": null,
+			"value": "infores:tcga",
+			"value_type_id": "biolink:InformationResource",
+			"attribute_source": "infores:gdc",
+			"value_url": "https://portal.gdc.cancer.gov/",
+			"description": "The Cancer Genome Atlas provided by the GDC Data Portal."
+		}
+	]
+}
+
+How to interpret: Closer log probability is to zero the more probable the relationship.
+Values range from -inf to 0
+
