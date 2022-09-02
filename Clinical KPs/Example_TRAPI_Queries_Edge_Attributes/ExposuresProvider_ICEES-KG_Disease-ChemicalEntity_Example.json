@@ -1,6 +1,8 @@
 
 **Example Query**
 
+Asthma - RWE - Chemical Entity
+
 {
 	"message": {
 		"query_graph": {
@@ -41,6 +43,8 @@
 }
 
 **Example Edge Attributes**
+
+Asthma - RWE - Fluticasone
 
 Note: Key metrics are “total” (sample size), chi_squared (Chi Square statistics), and p_value (P value).
 
