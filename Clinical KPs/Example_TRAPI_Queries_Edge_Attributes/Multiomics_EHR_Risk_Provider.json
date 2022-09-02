@@ -1,0 +1,39 @@
+**Example Query**
+
+{
+    "message": {
+        "query_graph": {
+            "nodes": {
+                "n0": {
+                    "ids": [
+                        "MONDO:0004975"
+                    ],
+                    "categories": [
+                        "biolink:Disease"
+                    ]
+                },
+                "n1": {
+		             "categories":[
+                         "biolink:PhenotypicFeature"
+                        ]
+                }
+            },
+            "edges": {
+                "e0": {
+                    "subject": "n1",
+                    "object": "n0",
+                    "predicates":[
+                        "biolink:associated_with_increased_likelihood_of"]
+
+                }
+            }
+        }
+    }
+}
+
+**Example Edge Attributes**
+
+•	attribute_type_id: p-valuevalue: (The FDR-corrected p-value - lower is better)
+•	attribute_type_id: odds_ratiovalue: (odds ratio based on multivariable linear regression - higher is better)
+•	attribute_type_id: feature_coefficientvalue: (feature coefficient from linear regression model - higher is better)
+•	attribute_type_id: auc_rocvalue: (AUROC for two-year predictive model for object -  higher is better)
