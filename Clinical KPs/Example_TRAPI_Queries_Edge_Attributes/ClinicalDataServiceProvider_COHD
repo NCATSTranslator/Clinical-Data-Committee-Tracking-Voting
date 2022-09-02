@@ -1,0 +1,95 @@
+**Example Query**
+
+{
+    "message": {
+        "query_graph": {
+            "nodes": {
+                "subj": {
+                    "ids": ["MONDO:0009061"]
+                },
+                "obj": {
+                    "categories": ["biolink:DiseaseOrPhenotypicFeature"]
+                }
+            },
+            "edges": {
+                "e0": {
+                    "subject": "subj",
+                    "object": "obj",
+                    "predicates": ["biolink:has_real_world_evidence_of_association_with"]
+                }
+            }
+        }
+    }
+}
+
+**Example Edge Attributes*
+
+Two related attributes can potentially be used:
+1) The observed-expected frequency ratio (ln_ratio)
+{
+    "attribute_source": "infores:cohd",
+    "attribute_type_id": "biolink:has_evidence",
+    "description": "Observed-expected frequency ratio. http://cohd.io/about.html",
+    "original_attribute_name": "ln_ratio",
+    "value": 7.308989437171575,
+    "value_type_id": "EDAM:data_1772"
+},
+2) The lower bound of the 95% CI of the observed-expected frequency ratio (first number within the array)
+{
+    "attribute_source": "infores:cohd",
+    "attribute_type_id": "biolink:has_confidence_level",
+    "description": "Observed-expected frequency ratio 0.99% confidence interval",
+    "original_attribute_name": "ln_ratio_confidence_interval",
+    "value": [
+        7.1447659245560216,
+        7.455795361004793
+    ],
+    "value_type_id": "EDAM:data_0951"
+},
+By default, COHD uses the 2nd option as the score for each result since it somewhat accounts for both association strength and confidence
+
+
+                        {
+                            "attribute_source": "infores:cohd",
+                            "attribute_type_id": "biolink:supporting_study_result",
+                            "attributes": [
+                                {
+                                    "attribute_source": "infores:cohd",
+                                    "attribute_type_id": "biolink:expected_count",
+                                    "description": "Calculated expected count of concept pair. For ln_ratio. http://cohd.io/about.html",
+                                    "original_attribute_name": "expected_count",
+                                    "value": 0.3006024806317585,
+                                    "value_type_id": "EDAM:operation_3438"
+                                },
+                                {
+                                    "attribute_source": "infores:cohd",
+                                    "attribute_type_id": "biolink:ln_ratio",
+                                    "description": "Observed-expected frequency ratio. http://cohd.io/about.html",
+                                    "original_attribute_name": "ln_ratio",
+                                    "value": 7.308989437171575,
+                                    "value_type_id": "EDAM:data_1772"
+                                },
+                                {
+                                    "attribute_source": "infores:cohd",
+                                    "attribute_type_id": "biolink:ln_ratio_confidence_interval",
+                                    "description": "Observed-expected frequency ratio 0.99% confidence interval",
+                                    "original_attribute_name": "ln_ratio_confidence_interval",
+                                    "value": [
+                                        7.1447659245560216,
+                                        7.455795361004793
+                                    ],
+                                    "value_type_id": "EDAM:data_0951"
+                                },
+                                {
+                                    "attribute_source": "infores:cohd",
+                                    "attribute_type_id": "biolink:supporting_data_set",
+                                    "description": "Dataset ID within COHD",
+                                    "original_attribute_name": "dataset_id",
+                                    "value": "COHD:dataset_1",
+                                    "value_type_id": "EDAM:data_1048"
+                                }
+                            ],
+                            "description": "A study result describing an observed-expected frequency anaylsis on a single pair of concepts",
+                            "value": null,
+                            "value_type_id": "biolink:ObservedExpectedFrequencyAnalysisResult"
+                        },
