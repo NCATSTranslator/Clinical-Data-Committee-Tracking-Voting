@@ -40,7 +40,7 @@ Particulate Matter - RWE - ChemicalEntity
 
 **Example Edge Attributes**
 
-Particulate Matter - RWE - Prednisone
+Particulate Matter - RWE - Prednisone - overlapping UNC Health patients, NIEHS PEG participants only
 
         "urn:uuid:2aca6873-7ebc-43ef-adf1-ac25c9dc5763": {
           "subject": "MESH:D052638",
