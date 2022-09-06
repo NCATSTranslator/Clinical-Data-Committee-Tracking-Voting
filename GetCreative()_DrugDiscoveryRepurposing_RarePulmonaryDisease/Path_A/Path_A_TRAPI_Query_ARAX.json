@@ -71,39 +71,36 @@
       "parameters": {
         "max_results": 100
       }
-    }    
+    }
   ],
   "message": {
     "query_graph": {
       "edges": {
-        "e01": {
-          "subject": "n0",
-          "object": "n1",
-          "predicates": [
-            "biolink:has_real_world_evidence_of_association_with"
-          ]
-        },
-        "e02": {
-          "subject": "n2",
-          "object": "n1",
-          "predicates": [
-            "biolink:gene_associated_with_condition"
-          ]
-        },
-        "e03": {
-          "subject": "n3",
-          "object": "n2",
-          "predicates": [
-            "biolink:physically_interacts_with"
-          ]
-        },
-        "e04": {
-          "subject": "n0",
-          "object": "n3",
+        "e0": {
+          "exclude": false,          
           "predicates": [
             "biolink:has_real_world_evidence_of_association_with"
           ],
-          "exclude": true
+          "subject": "n0",
+          "object": "n1"
+        },
+        "e1": {
+          "exclude": false,          
+          "subject": "n1",
+          "object": "n2"
+        },
+        "e2": {
+          "exclude": false,          
+          "subject": "n2",
+          "object": "n3"
+        },
+        "e3": {
+          "exclude": true,
+          "predicates": [
+            "biolink:has_real_world_evidence_of_association_with"
+          ],
+          "subject": "n3",
+          "object": "n4"
         }
       },
       "nodes": {
@@ -111,29 +108,32 @@
           "ids": [
             "MONDO:0009061"
           ],
-          "is_set": false,
-          "categories": [
-            "biolink:DiseaseOrPhenotypicFeature"
-          ],
-          "name": "MONDO:0009061"
+          "is_set": false
         },
         "n1": {
-          "is_set": false,
-          "categories": [
-            "biolink:DiseaseOrPhenotypicFeature"
-          ]
-        },
-        "n2": {
-          "is_set": false,
-          "categories": [
-            "biolink:Gene"
-          ]
-        },
-        "n3": {
-          "is_set": false,
           "categories": [
             "biolink:ChemicalEntity"
-          ]
+          ],
+          "is_set": false
+        },
+        "n2": {
+          "categories": [
+            "biolink:Gene",
+            "biolink:Protein"
+          ],
+          "is_set": false
+        },
+        "n3": {
+          "categories": [
+            "biolink:ChemicalEntity"
+          ],
+          "is_set": false
+        },
+        "n4": {
+          "ids": [
+            "MONDO:0009061"
+          ],
+          "is_set": false
         }
       }
     }
