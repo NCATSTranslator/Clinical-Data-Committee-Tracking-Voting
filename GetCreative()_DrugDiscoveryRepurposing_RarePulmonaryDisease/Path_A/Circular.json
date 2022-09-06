@@ -1,0 +1,53 @@
+{
+    "message": {
+        "query_graph": {
+            "edges": {
+                "e0": {
+                    "subject": "n1",
+                    "object": "n0",
+                    "predicates": [
+                        "biolink:contributes_to"
+                    ]
+                },
+                "e1": {
+                    "subject": "n2",
+                    "object": "n1",
+                    "predicates": [
+                        "biolink:increases_activity_of"
+                    ]
+                },
+                "e2": {
+                    "subject": "n2",
+                    "object": "n0",
+                    "predicates": [
+                        "biolink:has_real_world_evidence_of_association_with"
+                    ],
+                    "exclude": true
+                }
+            },
+            "nodes": {
+                "n0": {
+                    "categories": [
+                        "biolink:Disease"
+                    ],
+                    "ids": [
+                        "MONDO:0009061"
+                    ],
+                    "is_set": false
+                },
+                "n1": {
+                    "is_set": false,
+                    "categories": [
+                        "biolink:Gene"
+                    ]
+                },
+                "n2": {
+                    "categories": [
+                        "biolink:ChemicalEntity"
+                    ],
+                    "is_set": false
+                }
+            }
+        }
+    }
+}
