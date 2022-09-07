@@ -2,15 +2,15 @@
 
 ## Drug Discovery/Repurposing Working: Rare Pulmonary Disease
 
-This folder is intended to suppport development of a ‘drug discovery/repurposing workflow’, or a minimum set of SME-informed, curated, one-hop TRAPI queries chained together as a bona fide workflow.
+This folder is intended to suppport development of a Clinical Data Committee (CDC) drug discovery/repurposing get_creative() workflow, or a minimum set of SME-informed, curated, TRAPI queries.
 
-ARAX will invoke the workflow as a get_creative() operation in response to the high-level ‘templated’ question 'using whatever creative means necessary, find me drugs that may treat disease X' or 'what drugs may treat disease X?’.
+The CDC has partnered with Team ARAX to execute this workflow as a CDC get_creative() or human-curated workflow 'ARA'. Specifically, Team ARAX will standup a'ARA' endpoint to support the workflow during the September 2022 Translator relay meeting. This will allow the CDC ARA to respond to ARS get_creative() TRAPI queries. For the relay meeting these will be structured as a high-level ‘templated’ question: 'using whatever creative means necessary, find me drugs that may treat disease X' or 'what drugs may treat disease X?’.
 
-For the initial workflow, disease X = rare pulmonary disease.
-
-This effort is related to the TACT priority of ‘ARA Inference / Query Expansion’ and aligned with the priorities of the Operations and Workflow Working Group. It was motivated by a related 'drug target landscape workflow' (see [slides](https://docs.google.com/presentation/d/1I4Ip7BVOhMl5Qt9HFvPnUwXObrNwZnSyp1Ax8pPsXss/edit?usp=sharing), [related spreadsheet](https://docs.google.com/spreadsheets/d/1gpsO6svuLy7AghWwsfwZLbmdJtIc3Kc290F_-dDrdzQ/edit?usp=sharing), and [ticket](https://github.com/NCATSTranslator/Clinical-Data-Committee-Tracking-Voting/issues/9)).
+For the initial CDC get_creative() workflow, disease X = rare pulmonary disease.
 
 ### Rare Pulmonary Diseases
+
+The relevant CURIES for which the CDC workflow should be able to respond include the following:
 
 - primary ciliary dyskinesia (MONDO:0016575)
 - cystic fibrosis (MONDO:0009061)
@@ -18,34 +18,14 @@ This effort is related to the TACT priority of ‘ARA Inference / Query Expansio
 - lymphangioleiomyomatosis (MONDO:0011705)
 - idiopathic pulmonary fibrosis (MONDO:0008345)
 
-* Related CURIES: disorder of lung (SCTID: 19829001), lower respiratory tract disorder (MONDO:0000270)
-
 ### SMEs
 
 - Dr. Michael Knowles, UNC Chapel Hill
 - Dr. Margaret Leigh, UNC Chapel Hill
 
-### Original Biological Relevancy Questions
+### Overall Structure
 
-1. mRNA transcript expressed in disease relevant tissues/states?
-2. Protein found in literature in the context of disease-related phenotypes?
-3. Protein found in literature, directly linked to the disease?
-4. Pre-clinical or genetic data linking protein to indication?
-5. Drugs for this target in clinical trials for this indication or in real world clinical use?
-6. Is the protein a marketed drug target for this indication? If so, is there real world evidence of the drug being used?
+The workflow is comprised of three main paths, as depicted at a high level in the image below and described in greater detail under directories Path_A, Path_B, and Path_C.
 
-### Adapted Biological Relevancy Questions
-
-*Workflow Path: Option B+*
-
-1. What drugs (chemical entities) are associated with Disease X in the real world?
-- See [this folder](https://github.com/NCATSTranslator/Clinical-Data-Committee-Tracking-Voting/tree/main/GetCreative()_DrugDiscoveryRepurposing_RarePulmonaryDisease/Question1)
-2. What are the gene/protein targets of ~the remaining~ those drugs?
-3. Are there other drugs that target those proteins?
-4. If so, for additional evidence and/or ranking/grouping:
-- is there pre-clinical or genetic data linking the targets to Disease X?
-- is there literature linking the targets to Disease X?
-- is there literature linking the targets to Disease X-related phenotypes?
-- are the targets expressed in disease-relevant tissues?
-
+![image](https://user-images.githubusercontent.com/26254388/188991951-2151636e-6794-4a0f-969d-97adadc69149.png)
 
