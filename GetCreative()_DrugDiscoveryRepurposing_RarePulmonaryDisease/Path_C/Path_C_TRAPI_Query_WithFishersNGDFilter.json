@@ -1,0 +1,133 @@
+{
+  "workflow": [
+    {
+      "id": "fill"
+    },
+    {
+      "id": "bind"
+    },
+    {
+      "id": "overlay_fisher_exact_test",
+      "parameters": {
+        "subject_qnode_key": "n0",
+        "object_qnode_key": "n1",
+        "virtual_relation_label": "F1"
+      }
+    },
+    {
+      "id": "overlay_fisher_exact_test",
+      "parameters": {
+        "subject_qnode_key": "n1",
+        "object_qnode_key": "n2",
+        "virtual_relation_label": "J2"
+      }
+    },
+    {
+      "id": "overlay_fisher_exact_test",
+      "parameters": {
+        "subject_qnode_key": "n2",
+        "object_qnode_key": "n3",
+        "virtual_relation_label": "J3"
+      }
+    },
+    {
+      "id": "overlay_compute_ngd",
+      "parameters": {
+        "virtual_relation_label": "N1",
+        "qnode_keys": [
+          "n0",
+          "n1"
+        ]
+      }
+    },
+    {
+      "id": "overlay_compute_ngd",
+      "parameters": {
+        "virtual_relation_label": "N2",
+        "qnode_keys": [
+          "n1",
+          "n2"
+        ]
+      }
+    },
+    {
+      "id": "overlay_compute_ngd",
+      "parameters": {
+        "virtual_relation_label": "N3",
+        "qnode_keys": [
+          "n2",
+          "n3"
+        ]
+      }
+    },
+    {
+      "id": "complete_results"
+    },
+    {
+      "id": "score"
+    },
+    {
+      "id": "filter_results_top_n",
+      "parameters": {
+        "max_results": 100
+     }
+    }
+  ],
+  "message": {
+    "query_graph": {
+      "edges": {
+        "e01": {
+          "subject": "n0",
+          "object": "n1",
+          "predicates": [
+            "biolink:has_real_world_evidence_of_association_with"
+          ]
+        },
+        "e02": {
+          "subject": "n2",
+          "object": "n1",
+          "predicates": [
+            "biolink:gene_associated_with_condition"
+          ]
+        },
+        "e03": {
+          "subject": "n3",
+          "object": "n2",
+          "predicates": [
+            "biolink:physically_interacts_with"
+          ]
+        }
+      },
+      "nodes": {
+        "n0": {
+          "ids": [
+            "MONDO:0009061"
+          ],
+          "is_set": false,
+          "categories": [
+            "biolink:DiseaseOrPhenotypicFeature"
+          ],
+          "name": "MONDO:0009061"
+        },
+        "n1": {
+          "is_set": false,
+          "categories": [
+            "biolink:DiseaseOrPhenotypicFeature"
+          ]
+        },
+        "n2": {
+          "is_set": false,
+          "categories": [
+            "biolink:Gene"
+          ]
+        },
+        "n3": {
+          "is_set": false,
+          "categories": [
+            "biolink:ChemicalEntity"
+          ]
+        }
+      }
+    }
+  }
+}
