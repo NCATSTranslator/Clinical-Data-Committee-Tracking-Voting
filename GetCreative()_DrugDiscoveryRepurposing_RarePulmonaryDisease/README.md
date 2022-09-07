@@ -10,7 +10,7 @@ For the initial CDC get_creative() workflow, disease X = rare pulmonary disease.
 
 ### Rare Pulmonary Diseases
 
-The relevant CURIES for which the CDC workflow should be able to respond include the following:
+The relevant CURIES for which the CDC workflow should be able to respond to include the following:
 
 - primary ciliary dyskinesia (MONDO:0016575)
 - cystic fibrosis (MONDO:0009061)
