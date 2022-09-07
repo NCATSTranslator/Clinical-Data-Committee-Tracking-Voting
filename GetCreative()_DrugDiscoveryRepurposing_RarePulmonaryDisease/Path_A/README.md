@@ -4,7 +4,7 @@
 
 This workflow builds off of Casey's original workflow that does not use the overlay operations.
 Changes from the original:
-* For edge `e2`, the subject and object nodes have been swapped such that the `Gene/Protein` is the object and the `Chemical` is the subject
+* For edge `e2`, the subject and object nodes have been swapped such that the `Gene/Protein` (`n2`) is the object and the `Chemical` (`n3`) is the subject
 * A link between the `Gene/Protein` and the `Disease` has been added - this may not be crucial for cystic fibrosis since the CFTR gene is so prominent, but I think it will be important as we experiment with other diseases.
   * predicates used to link the gene/protein to the disease include:
     * biolink:contributes_to
