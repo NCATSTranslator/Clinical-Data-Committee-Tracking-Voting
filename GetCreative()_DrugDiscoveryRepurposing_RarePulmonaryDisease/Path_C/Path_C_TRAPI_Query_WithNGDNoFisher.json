@@ -9,6 +9,16 @@
     {
       "id": "overlay_compute_ngd",
       "parameters": {
+        "virtual_relation_label": "N1",
+        "qnode_keys": [
+          "n0",
+          "n1"
+        ]
+      }
+    },
+    {
+      "id": "overlay_compute_ngd",
+      "parameters": {
         "virtual_relation_label": "N2",
         "qnode_keys": [
           "n1",
