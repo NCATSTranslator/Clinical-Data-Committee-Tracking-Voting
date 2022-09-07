@@ -19,6 +19,10 @@ Changes from the original:
     * biolink:increases_secretion_of
     * biolink:increases_transport_of
     * biolink:entity_positively_regulates_entity
+    
+ **Note that the `exclude=True` parameter is not indicated on edge `e4` in the figure below**   
+![image](https://user-images.githubusercontent.com/7217210/188939691-9f5cfe09-e978-44c5-9458-ec48818e18b7.png)
+
 
 ## Path_A_no_overlay_chem_-reg_gene.json
 
@@ -35,3 +39,7 @@ This workflow is identical to the `Path_A_no_overlay_chem_+reg_gene.json` workfl
     * biolink:decreases_secretion_of
     * biolink:decreases_transport_of
     * biolink:entity_negatively_regulates_entity
+    
+ **Note that the `exclude=True` parameter is not indicated on edge `e4` in the figure below**   
+ ![image](https://user-images.githubusercontent.com/7217210/188940076-f08ed028-0b03-4337-9cce-9c6f614165c7.png)
+
