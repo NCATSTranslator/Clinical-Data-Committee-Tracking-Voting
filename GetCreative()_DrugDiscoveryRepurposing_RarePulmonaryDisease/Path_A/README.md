@@ -1,3 +1,7 @@
+## Path A
+
+This path of the CDC get_creative() workflow is intended to first identify biolink:ChemicalEntity associated with a biolink:Disease input CURIE for a rare pulmonary disease by way of biolink:has_real_world_evidence_of_association_with, then identify biolink:Gene associated with those chemical entities, and finally identify new chemical entities that are not in the first set of chemical entities but that act on the same gene set.
+
 ## Path_A_no_overlay_chem_+reg_gene.json
 
 [ARAX results](https://arax.ncats.io/?r=63042)
