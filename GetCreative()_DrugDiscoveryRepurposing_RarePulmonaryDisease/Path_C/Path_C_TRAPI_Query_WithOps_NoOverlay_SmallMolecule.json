@@ -84,7 +84,7 @@
         "n3": {
           "is_set": false,
           "categories": [
-            "biolink:ChemicalEntity"
+            "biolink:SmallMolecule"
           ]
         }
       }
