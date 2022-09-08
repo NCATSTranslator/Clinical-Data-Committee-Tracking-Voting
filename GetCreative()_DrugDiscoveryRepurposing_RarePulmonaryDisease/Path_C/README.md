@@ -6,7 +6,7 @@ This path of the CDC get_creative() workflow is essentially equivalent to Workfl
 
 Thus far, in the absence of a functional ```overlay_fisher_exact_test operation```, none of the Path C variations that were tested yielded promising results. In fact, most of the answer sets were very non-specific.
 
-**Example results:
+**Example results:**
 
 Path_C_TRAPI_QUERY_TextMiner_IsSet.json
 https://arax.ncats.io/?r=63243
