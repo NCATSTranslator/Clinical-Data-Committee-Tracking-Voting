@@ -56,3 +56,7 @@ This modification uses biolink:affects instead of the directional affects predic
 In comparison with previous results, we do get some proposed drugs that would have the opposite of the desired effect (decreases CFTR activity for CF, e.g., crofelmer, bumetanide, etc), but the results also include other drugs where the direction of the effect was not captured, and many of which treat / have been studied for treating CF (ataluren, galicaftor, bamocaftor, cysteamine). Ibuprofen is also used for slowing lung damage in CF patients, but the results propose it for the "wrong" reason (decreasing activity of CFTR)
 
 https://arax.ncats.io/?r=63114
+
+### Path A Comparison Testing
+
+https://docs.google.com/spreadsheets/d/1BqeN6G98bhLSDQkTtiU6qqm8NEVHl6Ngd8-FPIciY2c/edit?usp=sharing
