@@ -63,6 +63,6 @@ https://docs.google.com/spreadsheets/d/1BqeN6G98bhLSDQkTtiU6qqm8NEVHl6Ngd8-FPIci
 
 ### Path A Proposed Variations
 
-1. Using Bill's directed predicates, we can probably filter out any ICEES KG exposures from the first hop by leveraging the fact that these are mapped to both biolink:ChemicalEntity and biolink:EnvironmentalExposure. So, adding an ```exclude edge``` : (n0: rare lung disease)-[RWE]->(biolink:EnvironmentalExposure).
+1. Using Bill's directed predicates, we can probably filter out any ICEES KG exposures from the first hop by leveraging the fact that these are mapped to both biolink:ChemicalEntity and biolink:EnvironmentalExposure. So, adding an ```exclude edge``` : ```(n0: rare lung disease)-[RWE]->(biolink:EnvironmentalExposure)```.
 
-2. Again using Bill's directed predicates, we can seek chemical entities that might reduce the negative impact of environmental exposures, whether that be inducing disease, accelerating disease progression, or contributing to disease severity. In other words, we can seek ```biolink:EnvironmentalExposures`` in n1 and then seek ```biolink:ChemicalEntity``` in n3 that act in the opposite direction on shared ```biolink:Gene``` in n2. 
+2. Again using Bill's directed predicates, we can seek chemical entities that might reduce the negative impact of environmental exposures, whether that be inducing disease, accelerating disease progression, or contributing to disease severity. In other words, we can seek ```biolink:EnvironmentalExposures``` in n1 and then seek ```biolink:ChemicalEntity``` in n3 that act in the opposite direction on shared ```biolink:Gene``` in n2. 
