@@ -14,4 +14,4 @@ https://arax.ncats.io/?r=63243
 
 Path_C_TRAPI_Query_ARAX.json
 
-https://arax.ncats.io/?r=56513
+https://arax.ncats.io/?r=56513 (from 8/17/2022 with NGD and Fishers)
