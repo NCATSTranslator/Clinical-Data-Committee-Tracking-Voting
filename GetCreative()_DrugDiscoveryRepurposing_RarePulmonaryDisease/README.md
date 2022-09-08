@@ -4,7 +4,9 @@
 
 This folder is intended to suppport development of a Clinical Data Committee (CDC) drug discovery/repurposing get_creative() workflow, or a minimum set of SME-informed, curated, TRAPI queries.
 
-The CDC has partnered with Team ARAX to execute this workflow as a CDC get_creative() or human-curated workflow 'ARA'. Specifically, Team ARAX will standup a'ARA' endpoint to support the workflow during the September 2022 Translator relay meeting. This will allow the CDC ARA to respond to ARS get_creative() TRAPI queries. For the relay meeting these will be structured as a high-level ‘templated’ question: 'using whatever creative means necessary, find me drugs that may treat disease X' or 'what drugs may treat disease X?’.
+The CDC has partnered with Team ARAX to execute this workflow as a CDC get_creative() or human-curated workflow 'ARA'. Specifically, Team ARAX will standup a'ARA' endpoint to support the workflow during the September 2022 Translator relay meeting. This will allow the CDC ARA to respond to ARS get_creative() TRAPI queries during the SME - UI relay sessions. For the relay meeting these will be structured as a high-level ‘templated’ question: 'using whatever creative means necessary, find me drugs that may treat disease X' or 'what drugs may treat disease X?’.
+
+Post relay meeting, the CDC will discussion with the SRI team on whether it makes sense to move this effort under the umbrella of the SRI for long-term maintenance.
 
 For the initial CDC get_creative() workflow, disease X = rare pulmonary disease.
 
