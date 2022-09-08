@@ -1,6 +1,6 @@
 # README
 
-## Drug Discovery/Repurposing Working: Rare Pulmonary Disease
+## CDC get_creative() Drug Discovery/Repurposing Working: Rare Pulmonary Disease
 
 This folder is intended to suppport development of a Clinical Data Committee (CDC) drug discovery/repurposing get_creative() workflow, or a minimum set of SME-informed, curated, TRAPI queries.
 
