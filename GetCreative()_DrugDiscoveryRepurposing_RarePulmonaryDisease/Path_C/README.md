@@ -9,7 +9,9 @@ Thus far, in the absence of a functional ```overlay_fisher_exact_test operation`
 **Example results:**
 
 Path_C_TRAPI_QUERY_TextMiner_IsSet.json
+
 https://arax.ncats.io/?r=63243
 
 Path_C_TRAPI_Query_ARAX.json
+
 https://arax.ncats.io/?r=56513
