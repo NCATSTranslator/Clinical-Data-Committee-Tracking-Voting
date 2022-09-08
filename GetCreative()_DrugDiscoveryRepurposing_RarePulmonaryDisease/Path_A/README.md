@@ -2,7 +2,9 @@
 
 This path of the CDC get_creative() workflow is intended to first identify biolink:ChemicalEntity associated with a biolink:Disease input CURIE for a rare pulmonary disease by way of biolink:has_real_world_evidence_of_association_with, then identify biolink:Gene associated with those chemical entities, and finally identify new chemical entities that are not in the first set of chemical entities but that act on the same gene set.
 
-## Path_A_no_overlay_chem_+reg_gene.json
+## Path A variations
+
+### Path_A_no_overlay_chem_+reg_gene.json
 
 [ARAX results](https://arax.ncats.io/?r=63042)
 
@@ -28,7 +30,7 @@ Changes from the original:
 ![image](https://user-images.githubusercontent.com/7217210/188939691-9f5cfe09-e978-44c5-9458-ec48818e18b7.png)
 
 
-## Path_A_no_overlay_chem_-reg_gene.json
+### Path_A_no_overlay_chem_-reg_gene.json
 
 [ARAX results](https://arax.ncats.io/?r=63044)
 
@@ -47,3 +49,10 @@ This workflow is identical to the `Path_A_no_overlay_chem_+reg_gene.json` workfl
  **Note that the `exclude=True` parameter is not indicated on edge `e4` in the figure below**   
  ![image](https://user-images.githubusercontent.com/7217210/188940076-f08ed028-0b03-4337-9cce-9c6f614165c7.png)
 
+### Path_A_TRAPI_Query_Affects_NGD_TextMiner
+
+This modification uses biolink:affects instead of the directional affects predicates, uses the same n0-n2 edge Bill added, and overlays NGD between n3 (the answer ChemicalEntity node) and the disease (cystic fibrosis in these examples) to increase relevance of results.
+
+In comparison with previous results, we do get some proposed drugs that would have the opposite of the desired effect (decreases CFTR activity for CF, e.g., crofelmer, bumetanide, etc), but the results also include other drugs where the direction of the effect was not captured, and many of which treat / have been studied for treating CF (ataluren, galicaftor, bamocaftor, cysteamine). Ibuprofen is also used for slowing lung damage in CF patients, but the results propose it for the "wrong" reason (decreasing activity of CFTR)
+
+https://arax.ncats.io/?r=63114
