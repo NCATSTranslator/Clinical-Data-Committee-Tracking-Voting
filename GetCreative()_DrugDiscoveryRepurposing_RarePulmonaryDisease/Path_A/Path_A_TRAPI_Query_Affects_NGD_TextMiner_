@@ -1,0 +1,109 @@
+{
+  "workflow": [
+    {
+      "id": "fill"
+    },
+    {
+      "id": "bind"
+    },
+    {
+      "id": "overlay_compute_ngd",
+      "parameters": {
+        "virtual_relation_label": "N1",
+        "qnode_keys": [
+          "n3",
+          "n0"
+        ]
+      }
+    },
+    {
+      "id": "complete_results"
+    },
+    {
+      "id": "score"
+    },
+    {
+      "id": "filter_results_top_n",
+      "parameters": {
+        "max_results": 100
+      }
+    }
+  ],
+  "message": {
+    "query_graph": {
+      "edges": {
+        "e0": {
+          "exclude": false,
+          "predicates": [
+            "biolink:has_real_world_evidence_of_association_with"
+          ],
+          "subject": "n0",
+          "object": "n1"
+        },
+        "e1": {
+          "exclude": false,
+          "subject": "n1",
+          "object": "n2",
+          "predicates": ["biolink:affects"]
+        },
+        "e2": {
+          "exclude": false,
+          "subject": "n3",
+          "object": "n2",
+          "predicates": ["biolink:affects"]
+        },
+        "e3": {
+          "exclude": true,
+          "predicates": [
+            "biolink:has_real_world_evidence_of_association_with"
+          ],
+          "subject": "n3",
+          "object": "n4"
+        },
+        "e4": {
+          "exclude": false,
+          "subject": "n2",
+          "object": "n0",
+          "predicates": [
+            "biolink:contributes_to",
+            "biolink:associated_with",
+            "biolink:gene_associated_with_condition"
+          ]
+        }
+      },
+      "nodes": {
+        "n0": {
+          "ids": [
+            "MONDO:0009061"
+          ],
+          "is_set": false
+        },
+        "n1": {
+          "categories": [
+            "biolink:ChemicalEntity"
+          ],
+          "is_set": false
+        },
+        "n2": {
+          "categories": [
+            "biolink:Gene",
+            "biolink:Protein"
+          ],
+          "is_set": false
+        },
+        "n3": {
+          "categories": [
+            "biolink:ChemicalEntity"
+          ],
+          "is_set": false
+        },
+        "n4": {
+          "ids": [
+            "MONDO:0009061"
+          ],
+          "is_set": false
+        }
+      }
+    }
+  }
+}
