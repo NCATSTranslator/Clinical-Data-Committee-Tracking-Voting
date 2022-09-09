@@ -110,13 +110,13 @@
           ]
         },
         "n2": {
-          "is_set": false,
+          "is_set": true,
           "categories": [
             "biolink:Gene"
           ]
         },
         "n3": {
-          "is_set": false,
+          "is_set": true,
           "categories": [
             "biolink:ChemicalEntity"
           ]
