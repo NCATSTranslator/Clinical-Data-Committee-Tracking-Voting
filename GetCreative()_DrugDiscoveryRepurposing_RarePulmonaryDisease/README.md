@@ -28,8 +28,8 @@ The relevant CURIES for which the CDC workflow should be able to respond to incl
 
 ### Overall Structure
 
-The workflow is comprised of three main paths, as depicted at a high level in the image below and described in greater detail under directories Path_A, Path_B, and Path_C.
+The current workflow is comprised of three main paths, as depicted at a high level in the image below and described in greater detail under directories Path_A, Path_B, and Path_C.
 
-![image](https://user-images.githubusercontent.com/26254388/189249199-282a7285-dda3-462d-b7ba-096c521a024e.png)
+![image](https://user-images.githubusercontent.com/26254388/189464364-3d6824ce-7ee2-4d0e-9128-3d6c06588f5e.png)
 
 
