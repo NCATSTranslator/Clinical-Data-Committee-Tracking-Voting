@@ -18,4 +18,8 @@ https://arax.ncats.io/?r=56513 (from 8/17/2022 with NGD and Fishers)
 
 Path_C_TRAPI_Query_WithFishers-e02-e03_NGD_IsSet.json
 
+https://arax.ncats.io/?r=63425
+
+Path_C_TRAPI_Query_withFishersNGD_IsSet.json
+
 https://arax.ncats.io/?r=63649
