@@ -4,7 +4,15 @@ This path of the CDC get_creative() workflow is essentially equivalent to Workfl
 
 ### Path C Variations
 
-Thus far, in the absence of a functional ```overlay_fisher_exact_test operation```, none of the Path C variations that were tested yielded promising results. In fact, most of the answer sets were very non-specific.
+Thus far, none of the Path C variations that were tested yielded promising results. In fact, most of the answer sets were very non-specific. Potential reasons why include the following:
+
+1.  Path C workflow was promising for DILI but does not appear promising for CF
+
+- DILI has a known treatment (i.e., xstop causal agent) but symptoms often persist and/or worsen; largely limited to liver; no definitive genes
+
+- CF has a known treatment, but not for 10% of patients; affects numerous organ systems, but lung of primary importance; known gene
+
+2. Path C seeks drugs to repurpose for treating phenotypes (symptoms) associated with disease, e.g., DILI; Paths A & B, which seem more promising, seek drugs to repurpose for treating the cause of disease, e.g., CF
 
 **Example results:**
 
