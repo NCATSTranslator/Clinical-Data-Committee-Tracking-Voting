@@ -74,7 +74,7 @@ Particulate Matter - RWE - Prednisone - overlapping UNC Health patients, NIEHS P
               "attribute_type_id": "biolink:Attribute",
               "value": 122,
               "value_type_id": "EDAM:data_0006",
-              "original_attribute_name": "total",
+              "original_attribute_name": "total sample size",
               "value_url": null,
               "attribute_source": null,
               "description": null,
@@ -82,7 +82,7 @@ Particulate Matter - RWE - Prednisone - overlapping UNC Health patients, NIEHS P
             },
             {
               "attribute_type_id": "biolink:Attribute",
-              "value": "https://github.com/NCATSTranslator/Translator-All/wiki/ICEES--and-ICEES-KG-Terms-and-Conditions-of-Use",
+              "value": "https://github.com/NCATSTranslator/Translator-All/wiki/ICEES-and-ICEES-KG-Terms-and-Conditions-of-Use",
               "value_type_id": "EDAM:data_0006",
               "original_attribute_name": "terms_and_conditions_of_use",
               "value_url": null,
