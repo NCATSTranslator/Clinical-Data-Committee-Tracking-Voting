@@ -1,12 +1,10 @@
+**Example Query**
 
+Asthma - RWE - Chemical Entity
 {
 	"message": {
 		"query_graph": {
 			"nodes": {
-**Example Query**
-
-Asthma - RWE - Chemical Entity
-
 				"n0": {
 					"ids": [
 						"MONDO:0004979"
