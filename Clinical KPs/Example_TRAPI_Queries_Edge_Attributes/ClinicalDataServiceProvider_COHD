@@ -51,7 +51,7 @@ By default, COHD uses the 2nd option as the score for each result since it somew
 
                         {
                             "attribute_source": "infores:cohd",
-                            "attribute_type_id": "biolink:supporting_study_result",
+                            "attribute_type_id": "biolink:has_supporting_study_result",
                             "attributes": [
                                 {
                                     "attribute_source": "infores:cohd",
