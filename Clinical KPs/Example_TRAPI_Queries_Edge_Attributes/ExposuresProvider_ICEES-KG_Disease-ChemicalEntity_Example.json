@@ -2,42 +2,39 @@
 
 Asthma - RWE - Chemical Entity
 {
-	"message": {
-		"query_graph": {
-			"nodes": {
-				"n0": {
-					"ids": [
-						"MONDO:0004979"
-					],
-					"categories": [
-						"biolink:Disease"
-					],
-					"is_set": false,
-					"constraints": []
-				},
-				"n1": {
-					"ids": null,
-					"categories": [
-						"biolink:ChemicalEntity"
-					],
-					"is_set": false,
-					"constraints": []
-				}
-			},
-			"edges": {
-				"e0": {
-					"subject": "n0",
-					"object": "n1",
-					"knowledge_type": null,
-					"predicates": [
-						"biolink:has_real_world_evidence_of_association_with"
-					],
-					"attribute_constraints": [],
-					"qualifier_constraints": []
-				}
-			}
-		}
-	}
+  "message": {
+    "query_graph": {
+      "nodes": {
+        "n0": {
+          "ids": [
+            "MONDO:0004979"
+          ],
+          "categories": [
+            "biolink:Disease"
+          ]
+        },
+        "n1": {
+          "categories": [
+            "biolink:ChemicalEntity"
+          ]
+        }
+      },
+      "edges": {
+        "e0": {
+          "subject": "n0",
+          "object": "n1",
+          "predicates": [
+            "biolink:has_real_world_evidence_of_association_with"
+          ]
+        }
+      }
+    }
+  },
+  "workflow": [
+    {
+      "id": "lookup"
+    }
+  ]
 }
 
 **Example Edge Attributes**
@@ -46,7 +43,7 @@ Asthma - RWE - Fluticasone
 
 Note: Key metrics are “total” (sample size), chi_squared (Chi Square statistics), and p_value (P value).
 
-       "urn:uuid:34ee1703-c9db-4786-b898-964c790af2c6": {
+        "urn:uuid:ff1c4aec-25de-425f-8148-e0e971311ff4": {
           "subject": "PUBCHEM.COMPOUND:5311101",
           "object": "MONDO:0004979",
           "predicate": "biolink:has_real_world_evidence_of_association_with",
@@ -54,9 +51,59 @@ Note: Key metrics are “total” (sample size), chi_squared (Chi Square statist
           "attributes": [
             {
               "attribute_type_id": "biolink:Attribute",
+              "value": "https://github.com/NCATSTranslator/Translator-All/wiki/ICEES--and-ICEES-KG-Terms-and-Conditions-of-Use",
+              "value_type_id": "EDAM:data_0006",
+              "original_attribute_name": "terms_and_conditions_of_use",
+              "value_url": null,
+              "attribute_source": null,
+              "description": null,
+              "attributes": null
+            },
+            {
+              "attribute_type_id": "biolink:p_value",
+              "value": 2.9280615997150944e-231,
+              "value_type_id": "EDAM:data_0006",
+              "original_attribute_name": "p_value",
+              "value_url": null,
+              "attribute_source": null,
+              "description": null,
+              "attributes": null
+            },
+            {
+              "attribute_type_id": "biolink:Attribute",
+              "value": "ReactiveAirwayDx",
+              "value_type_id": "EDAM:data_0006",
+              "original_attribute_name": "object_feature_name",
+              "value_url": null,
+              "attribute_source": null,
+              "description": null,
+              "attributes": null
+            },
+            {
+              "attribute_type_id": "biolink:Attribute",
+              "value": "FluticasoneRx",
+              "value_type_id": "EDAM:data_0006",
+              "original_attribute_name": "subject_feature_name",
+              "value_url": null,
+              "attribute_source": null,
+              "description": null,
+              "attributes": null
+            },
+            {
+              "attribute_type_id": "biolink:Attribute",
               "value": 1074.2217609681468,
               "value_type_id": "EDAM:data_0006",
               "original_attribute_name": "chi_squared",
+              "value_url": null,
+              "attribute_source": null,
+              "description": null,
+              "attributes": null
+            },
+            {
+              "attribute_type_id": "biolink:Attribute",
+              "value": "Asthma_UNC_PEGS_patient_2015_v4_binned_deidentified|asthma|2015|2022_08_03_11_31_06",
+              "value_type_id": "EDAM:data_0006",
+              "original_attribute_name": "icees_cohort_identifier",
               "value_url": null,
               "attribute_source": null,
               "description": null,
@@ -75,20 +122,10 @@ Note: Key metrics are “total” (sample size), chi_squared (Chi Square statist
               "attributes": null
             },
             {
-              "attribute_type_id": "biolink:Attribute",
-              "value": "FluticasoneRx",
+              "attribute_type_id": "biolink:supporting_data_source",
+              "value": "https://github.com/NCATSTranslator/Translator-All/wiki/Exposures-Provider-ICEES",
               "value_type_id": "EDAM:data_0006",
-              "original_attribute_name": "subject_feature_name",
-              "value_url": null,
-              "attribute_source": null,
-              "description": null,
-              "attributes": null
-            },
-            {
-              "attribute_type_id": "biolink:Attribute",
-              "value": "Asthma_UNC_PEGS_patient_2015_v4_binned_deidentified|asthma|2015|2022_08_03_11_31_06",
-              "value_type_id": "EDAM:data_0006",
-              "original_attribute_name": "icees_cohort_identifier",
+              "original_attribute_name": "biolink:supporting_data_source",
               "value_url": null,
               "attribute_source": null,
               "description": null,
@@ -98,17 +135,7 @@ Note: Key metrics are “total” (sample size), chi_squared (Chi Square statist
               "attribute_type_id": "biolink:Attribute",
               "value": 157920,
               "value_type_id": "EDAM:data_0006",
-              "original_attribute_name": "total sample size",
-              "value_url": null,
-              "attribute_source": null,
-              "description": null,
-              "attributes": null
-            },
-            {
-              "attribute_type_id": "biolink:Attribute",
-              "value": "ReactiveAirwayDx",
-              "value_type_id": "EDAM:data_0006",
-              "original_attribute_name": "object_feature_name",
+              "original_attribute_name": "total_sample_size",
               "value_url": null,
               "attribute_source": null,
               "description": null,
@@ -125,37 +152,6 @@ Note: Key metrics are “total” (sample size), chi_squared (Chi Square statist
               "attribute_source": "infores:automat-icees-kg",
               "description": null,
               "attributes": null
-            },
-            {
-              "attribute_type_id": "biolink:Attribute",
-              "value": "https://github.com/NCATSTranslator/Translator-All/wiki/ICEES-and-ICEES-KG-Terms-and-Conditions-of-Use",
-              "value_type_id": "EDAM:data_0006",
-              "original_attribute_name": "terms_and_conditions_of_use",
-              "value_url": null,
-              "attribute_source": null,
-              "description": null,
-              "attributes": null
-            },
-            {
-              "attribute_type_id": "biolink:supporting_data_source",
-              "value": "https://github.com/NCATSTranslator/Translator-All/wiki/Exposures-Provider-ICEES",
-              "value_type_id": "EDAM:data_0006",
-              "original_attribute_name": "biolink:supporting_data_source",
-              "value_url": null,
-              "attribute_source": null,
-              "description": null,
-              "attributes": null
-            },
-            {
-              "attribute_type_id": "biolink:p_value",
-              "value": 2.9280615997150944e-231,
-              "value_type_id": "EDAM:data_0006",
-              "original_attribute_name": "p_value",
-              "value_url": null,
-              "attribute_source": null,
-              "description": null,
-              "attributes": null
             }
           ]
         },
-
