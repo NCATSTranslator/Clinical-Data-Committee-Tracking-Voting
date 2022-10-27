@@ -1,4 +1,66 @@
 {
+    "workflow": [
+        {
+            "id": "fill",
+            "parameters": {
+                "allowlist": [
+                    "infores:automat-cord19",
+                    "infores:text-mining-provider-cooccurrence",
+                    "infores:automat-uberongraph",
+                    "infores:automat-robokop",
+                    "infores:automat-covidkop",
+                    "infores:automat-hetio",
+                    "infores:cam-kp",
+                    "infores:service-provider-trapi",
+                    "infores:rtx-kg2"
+                ],
+                "qedge_keys": [
+                    "e0"
+                ]
+            }
+        },
+        {
+            "id": "fill",
+            "parameters": {
+                "allowlist": [
+                    "infores:connections-hypothesis"
+                ],
+                "qedge_keys": [
+                    "e1"
+                ]
+            }
+        },
+        {
+            "id": "fill",
+            "parameters": {
+                "allowlist": [
+                    "infores:automat-drug-central",
+                    "infores:automat-covidkop",
+                    "infores:automat-gtopdb",
+                    "infores:automat-pharos",
+                    "infores:sri-reference-kg",
+                    "infores:automat-hmdb",
+                    "infores:automat-robokop",
+                    "infores:molepro",
+                    "infores:rtx-kg2",
+                    "infores:service-provider-trapi",
+                    "infores:automat-hetio",
+                    "infores:cam-kp",
+                    "infores:automat-ctd",
+                    "infores:rtx-kg2"
+                ],
+                "qedge_keys": [
+                    "e2"
+                ]
+            }
+        },
+        {
+            "id": "bind"
+        },
+        {
+            "id": "score"
+        }
+    ],
     "message": {
         "query_graph": {
             "nodes": {
