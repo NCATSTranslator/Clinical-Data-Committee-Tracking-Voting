@@ -41,7 +41,7 @@ Asthma - RWE - Chemical Entity
 
 Asthma - RWE - Fluticasone
 
-Note: Key metrics are “total” (sample size), chi_squared (Chi Square statistics), and p_value (P value).
+Note: Key metrics are total_sample_size (N, sample size), chi_squared (Chi Square statistic), and p_value (P value).
 
         "urn:uuid:ff1c4aec-25de-425f-8148-e0e971311ff4": {
           "subject": "MONDO:0004979",
