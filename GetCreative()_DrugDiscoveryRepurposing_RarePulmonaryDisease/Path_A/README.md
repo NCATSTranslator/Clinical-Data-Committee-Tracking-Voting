@@ -63,7 +63,9 @@ https://docs.google.com/spreadsheets/d/1BqeN6G98bhLSDQkTtiU6qqm8NEVHl6Ngd8-FPIci
 
 ### Path A Proposed Variations
 
-1. Using Bill's directed predicates, we can probably filter out any ICEES KG exposures from the first hop by leveraging the fact that these are mapped to both biolink:ChemicalEntity and biolink:EnvironmentalExposure. So, adding an ```exclude edge``` : ```(n0: rare lung disease)-[RWE]->(biolink:EnvironmentalExposure)```.
+~~1. Using Bill's directed predicates, we can probably filter out any ICEES KG exposures from the first hop by leveraging the fact that these are mapped to both biolink:ChemicalEntity and biolink:EnvironmentalExposure. So, adding an ```exclude edge``` : ```(n0: rare lung disease)-[RWE]->(biolink:EnvironmentalExposure)```.
+
+*FIXED on ICEES KG side*
 
 ***Priority**
 
