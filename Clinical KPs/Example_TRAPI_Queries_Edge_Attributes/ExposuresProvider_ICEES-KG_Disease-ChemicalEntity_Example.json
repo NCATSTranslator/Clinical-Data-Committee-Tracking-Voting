@@ -1,6 +1,6 @@
 **Example Query**
 
-Asthma - RWE - Chemical Entity
+Asthma - correlated_with - Chemical Entity
 {
   "message": {
     "query_graph": {
@@ -24,7 +24,7 @@ Asthma - RWE - Chemical Entity
           "subject": "n0",
           "object": "n1",
           "predicates": [
-            "biolink:has_real_world_evidence_of_association_with"
+            "biolink:correlated_with"
           ]
         }
       }
