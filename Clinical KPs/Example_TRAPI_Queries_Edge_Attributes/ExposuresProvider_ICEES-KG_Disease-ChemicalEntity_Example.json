@@ -40,7 +40,7 @@ Asthma - correlated_with - Chemical Entity
 
 **Example Edge Attributes**
 
-Asthma - RWE - Fluticasone
+Asthma - correlated_with - Fluticasone
 
 Note: Key metrics are total_sample_size (N, sample size), chi_squared_statistic (Chi Square statistic), chi_squared_p (Chi Square P value), log_odds_ratio (log of odds ratio), and log_odds_ratio_95 (95% Confidence Interval for log_odds_ratio).
 
