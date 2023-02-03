@@ -7,6 +7,7 @@ This path of the CDC get_creative() workflow is intended to first identify bioli
 ### Path_A_no_overlay_chem_+reg_gene.json
 
 [ARAX results](https://arax.ncats.io/?r=63042)
+
 [ARAX results Feb 2023](https://arax.ncats.io/?r=127993)
 
 The relationships between the chemical nodes (`n1` & `n3`) and the gene/protein are matched so that they are both some form of positive regulation, thus constraining the repurposed chemical (`n3`) to influence the gene in the same way as the known chemical (`n1`). 
@@ -25,6 +26,7 @@ The relationships between the chemical nodes (`n1` & `n3`) and the gene/protein 
 ### Path_A_no_overlay_chem_-reg_gene.json
 
 [ARAX results](https://arax.ncats.io/?r=63044)
+
 [ARAX results Feb 2023](https://arax.ncats.io/?r=127999)
 
 This workflow is identical to the `Path_A_no_overlay_chem_+reg_gene.json` workflow, except that the chemical-to-gene relationships have been constrained to some form of negative regulation.
