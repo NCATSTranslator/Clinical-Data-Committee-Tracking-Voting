@@ -1,0 +1,157 @@
+{
+    "workflow": [
+        {
+            "id": "fill",
+            "parameters": {
+                "allowlist": [
+                    "infores:automat-cord19",
+                    "infores:text-mining-provider-cooccurrence",
+                    "infores:automat-uberongraph",
+                    "infores:automat-robokop",
+                    "infores:automat-covidkop",
+                    "infores:automat-hetio",
+                    "infores:cam-kp",
+                    "infores:service-provider-trapi",
+                    "infores:rtx-kg2"
+                ],
+                "qedge_keys": [
+                    "e0"
+                ]
+            }
+        },
+        {
+            "id": "fill",
+            "parameters": {
+                "allowlist": [
+                    "infores:connections-hypothesis"
+                ],
+                "qedge_keys": [
+                    "e1"
+                ]
+            }
+        },
+        {
+            "id": "fill",
+            "parameters": {
+                "allowlist": [
+                    "infores:automat-drug-central",
+                    "infores:automat-covidkop",
+                    "infores:automat-gtopdb",
+                    "infores:automat-pharos",
+                    "infores:sri-reference-kg",
+                    "infores:automat-hmdb",
+                    "infores:automat-robokop",
+                    "infores:molepro",
+                    "infores:rtx-kg2",
+                    "infores:service-provider-trapi",
+                    "infores:automat-hetio",
+                    "infores:cam-kp",
+                    "infores:automat-ctd",
+                    "infores:rtx-kg2"
+                ],
+                "qedge_keys": [
+                    "e2"
+                ]
+            }
+        },
+        {
+            "id": "fill",
+            "parameters": {
+                "allowlist": [
+                    "infores:automat-cord19",
+                    "infores:automat-pharos",
+                    "infores:automat-biolink",
+                    "infores:text-mining-provider-cooccurrence",
+                    "infores:automat-uberongraph",
+                    "infores:sri-reference-kg",
+                    "infores:automat-robokop",
+                    "infores:automat-covidkop",
+                    "infores:automat-hetio",
+                    "infores:cam-kp",
+                    "infores:service-provider-trapi",
+                    "infores:rtx-kg2"
+                ],
+                "qedge_keys": [
+                    "e3"
+                ]
+            }
+        },
+        {
+            "id": "bind"
+        },
+        {
+            "id": "score"
+        },
+        {
+            "id": "filter_results_top_n",
+            "parameters": {
+                "max_results": 100
+            }
+        }
+    ],
+    "message": {
+        "query_graph": {
+            "nodes": {
+                "n0": {
+                    "categories": [
+                        "biolink:Disease"
+                    ],
+                    "ids": [
+                        "MONDO:0009061"
+                    ]
+                },
+                "n1": {
+                    "categories": [
+                        "biolink:GrossAnatomicalStructure"
+                    ]
+                },
+                "n2": {
+                    "categories": [
+                        "biolink:Gene"
+                    ]
+                },
+                "n3": {
+                    "categories": [
+                        "biolink:Drug",
+                        "biolink:SmallMolecule"
+                    ]
+                },
+                "n4": {
+                    "categories": [
+                        "biolink:PhenotypicFeature"
+                    ]
+                }
+            },
+            "edges": {
+                "e0": {
+                    "subject": "n0",
+                    "object": "n1",
+                    "predicates": [
+                        "biolink:located_in"
+                    ]
+                },
+                "e1": {
+                    "subject": "n1",
+                    "object": "n2",
+                    "predicates": [
+                        "biolink:expresses"
+                    ]
+                },
+                "e2": {
+                    "subject": "n3",
+                    "object": "n2",
+                    "predicates": [
+                        "biolink:affects"
+                    ]
+                },
+                "e3": {
+                    "subject": "n4",
+                    "object": "n2",
+                    "predicates": [
+                        "biolink:related_to"
+                    ]
+                }
+            }
+        }
+    }
+}
