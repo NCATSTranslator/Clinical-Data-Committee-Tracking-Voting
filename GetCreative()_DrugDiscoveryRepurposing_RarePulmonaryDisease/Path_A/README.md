@@ -8,7 +8,7 @@ This path of the CDC get_creative() workflow is intended to first identify bioli
 
 [ARAX results](https://arax.ncats.io/?r=63042)
 
-[ARAX results Feb 2023](https://arax.ncats.io/?r=127993)
+[ARAX results Feb 2023](https://arax.ncats.io/?r=127997)
 
 The relationships between the chemical nodes (`n1` & `n3`) and the gene/protein are matched so that they are both some form of positive regulation, thus constraining the repurposed chemical (`n3`) to influence the gene in the same way as the known chemical (`n1`). 
   * predicates used to indicate positive regulation include:
