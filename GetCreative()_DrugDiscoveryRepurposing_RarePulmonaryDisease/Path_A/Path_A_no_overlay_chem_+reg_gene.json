@@ -25,7 +25,8 @@
         "e0": {
           "exclude": false,          
           "predicates": [
-            "biolink:has_real_world_evidence_of_association_with"
+            "biolink:correlated_with",
+            "biolink:associated_with_likelihood_of"
           ],
           "subject": "n0",
           "object": "n1"
@@ -61,7 +62,8 @@
         "e3": {
           "exclude": true,
           "predicates": [
-            "biolink:has_real_world_evidence_of_association_with"
+            "biolink:correlated_with",
+            "biolink:associated_with_likelihood_of"
           ],
           "subject": "n3",
           "object": "n4"

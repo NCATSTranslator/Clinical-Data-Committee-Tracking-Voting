@@ -8,15 +8,9 @@ This path of the CDC get_creative() workflow is intended to first identify bioli
 
 [ARAX results](https://arax.ncats.io/?r=63042)
 
-This workflow builds off of Casey's original workflow that does not use the overlay operations.
-Changes from the original:
-* For edge `e2`, the subject and object nodes have been swapped such that the `Gene/Protein` (`n2`) is the object and the `Chemical` (`n3`) is the subject
-* A link between the `Gene/Protein` and the `Disease` has been added - this may not be crucial for cystic fibrosis since the CFTR gene is so prominent, but I think it will be important as we experiment with other diseases.
-  * predicates used to link the gene/protein to the disease include:
-    * biolink:contributes_to
-    * biolink:associated_with
-    * biolink:gene_associated_with_condition
-* The relationships between the chemical nodes (`n1` & `n3`) and the gene/protein are matched so that they are both some form of positive regulation, thus constraining the repurposed chemical (`n3`) to influence the gene in the same way as the known chemical (`n1`). 
+[ARAX results Feb 2023](https://arax.ncats.io/?r=127997)
+
+The relationships between the chemical nodes (`n1` & `n3`) and the gene/protein are matched so that they are both some form of positive regulation, thus constraining the repurposed chemical (`n3`) to influence the gene in the same way as the known chemical (`n1`). 
   * predicates used to indicate positive regulation include:
     * biolink:increases_activity_of
     * biolink:increases_expression_of
@@ -26,13 +20,14 @@ Changes from the original:
     * biolink:increases_transport_of
     * biolink:entity_positively_regulates_entity
     
- **Note that the `exclude=True` parameter is not indicated on edge `e4` in the figure below**   
-![image](https://user-images.githubusercontent.com/7217210/188939691-9f5cfe09-e978-44c5-9458-ec48818e18b7.png)
-
-
+ **Note that the `exclude=True` parameter is indicated by the red edge in the figure below**
+![image](https://user-images.githubusercontent.com/7217210/216733867-3636deac-03ec-48e0-ae82-ef00276c8025.png)
+ 
 ### Path_A_no_overlay_chem_-reg_gene.json
 
 [ARAX results](https://arax.ncats.io/?r=63044)
+
+[ARAX results Feb 2023](https://arax.ncats.io/?r=127999)
 
 This workflow is identical to the `Path_A_no_overlay_chem_+reg_gene.json` workflow, except that the chemical-to-gene relationships have been constrained to some form of negative regulation.
 
@@ -46,10 +41,11 @@ This workflow is identical to the `Path_A_no_overlay_chem_+reg_gene.json` workfl
     * biolink:decreases_transport_of
     * biolink:entity_negatively_regulates_entity
     
- **Note that the `exclude=True` parameter is not indicated on edge `e4` in the figure below**   
- ![image](https://user-images.githubusercontent.com/7217210/188940076-f08ed028-0b03-4337-9cce-9c6f614165c7.png)
+ **Note that the `exclude=True` parameter is indicated by the red edge in the figure below**
+![image](https://user-images.githubusercontent.com/7217210/216733996-904da776-954f-4bf6-b74b-4c2407d4065d.png)
 
-### Path_A_TRAPI_Query_Affects_NGD_TextMiner
+
+### (DEPRECATED) Path_A_TRAPI_Query_Affects_NGD_TextMiner
 
 This modification uses biolink:affects instead of the directional affects predicates, uses the same n0-n2 edge Bill added, and overlays NGD between n3 (the answer ChemicalEntity node) and the disease (cystic fibrosis in these examples) to increase relevance of results.
 
