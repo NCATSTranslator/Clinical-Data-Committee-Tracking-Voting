@@ -21,7 +21,7 @@ The relationships between the chemical nodes (`n1` & `n3`) and the gene/protein 
     * biolink:entity_positively_regulates_entity
     
  **Note that the `exclude=True` parameter is indicated by the red edge in the figure below**
-![image](https://user-images.githubusercontent.com/7217210/216713110-4d45f14d-cc28-4d07-8141-f98022d154ff.png)
+![image](https://user-images.githubusercontent.com/7217210/216733867-3636deac-03ec-48e0-ae82-ef00276c8025.png)
  
 ### Path_A_no_overlay_chem_-reg_gene.json
 
@@ -42,7 +42,7 @@ This workflow is identical to the `Path_A_no_overlay_chem_+reg_gene.json` workfl
     * biolink:entity_negatively_regulates_entity
     
  **Note that the `exclude=True` parameter is indicated by the red edge in the figure below**
-![image](https://user-images.githubusercontent.com/7217210/216713463-4ff683b9-d1e8-42b2-b894-3ddbb6e28b4b.png)
+![image](https://user-images.githubusercontent.com/7217210/216733852-289744aa-c93a-434b-8a33-d3aebf8824fe.png)
 
 
 ### (DEPRECATED) Path_A_TRAPI_Query_Affects_NGD_TextMiner
