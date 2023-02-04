@@ -42,7 +42,7 @@ This workflow is identical to the `Path_A_no_overlay_chem_+reg_gene.json` workfl
     * biolink:entity_negatively_regulates_entity
     
  **Note that the `exclude=True` parameter is indicated by the red edge in the figure below**
-![image](https://user-images.githubusercontent.com/7217210/216733852-289744aa-c93a-434b-8a33-d3aebf8824fe.png)
+![image](https://user-images.githubusercontent.com/7217210/216733996-904da776-954f-4bf6-b74b-4c2407d4065d.png)
 
 
 ### (DEPRECATED) Path_A_TRAPI_Query_Affects_NGD_TextMiner
