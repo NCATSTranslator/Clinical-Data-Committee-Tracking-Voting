@@ -36,13 +36,73 @@
           "subject": "n1",
           "object": "n2",
           "predicates": [
-            "biolink:decreases_activity_of",
-            "biolink:decreases_expression_of",
-            "biolink:decreases_abundance_of",
-            "biolink:increases_metabolic_processing_of",
-            "biolink:decreases_secretion_of",
-            "biolink:decreases_transport_of",
-            "biolink:entity_negatively_regulates_entity"
+            "biolink:affects"
+          ],
+          "qualifier_constraints": [
+            {
+              "qualifier_set": [
+                {
+                  "qualifier_type_id": "biolink:object_direction_qualifier",
+                  "qualifier_value": "decreased"
+                },
+                {
+                  "qualifier_type_id": "biolink:object_aspect_qualifier",
+                  "qualifier_value": "activity_or_abundance"
+                },
+                {
+                  "qualifier_type_id": "biolink:qualified_predicate",
+                  "qualifier_value": "biolink:causes"
+                }
+              ]
+            },
+            {
+              "qualifier_set": [
+                {
+                  "qualifier_type_id": "biolink:object_direction_qualifier",
+                  "qualifier_value": "decreased"
+                },
+                {
+                  "qualifier_type_id": "biolink:object_aspect_qualifier",
+                  "qualifier_value": "expression"
+                },
+                {
+                  "qualifier_type_id": "biolink:qualified_predicate",
+                  "qualifier_value": "biolink:causes"
+                }
+              ]
+            },
+            {
+              "qualifier_set": [
+                {
+                  "qualifier_type_id": "biolink:object_direction_qualifier",
+                  "qualifier_value": "decreased"
+                },
+                {
+                  "qualifier_type_id": "biolink:object_aspect_qualifier",
+                  "qualifier_value": "secretion"
+                },
+                {
+                  "qualifier_type_id": "biolink:qualified_predicate",
+                  "qualifier_value": "biolink:causes"
+                }
+              ]
+            },
+            {
+              "qualifier_set": [
+                {
+                  "qualifier_type_id": "biolink:object_direction_qualifier",
+                  "qualifier_value": "increased"
+                },
+                {
+                  "qualifier_type_id": "biolink:object_aspect_qualifier",
+                  "qualifier_value": "degradation"
+                },
+                {
+                  "qualifier_type_id": "biolink:qualified_predicate",
+                  "qualifier_value": "biolink:causes"
+                }
+              ]
+            }
           ]
         },
         "e2": {
@@ -50,13 +110,73 @@
           "subject": "n3",
           "object": "n2",
           "predicates": [
-            "biolink:decreases_activity_of",
-            "biolink:decreases_expression_of",
-            "biolink:decreases_abundance_of",
-            "biolink:increases_metabolic_processing_of",
-            "biolink:decreases_secretion_of",
-            "biolink:decreases_transport_of",
-            "biolink:entity_negatively_regulates_entity"
+            "biolink:affects"
+          ],
+          "qualifier_constraints": [
+            {
+              "qualifier_set": [
+                {
+                  "qualifier_type_id": "biolink:object_direction_qualifier",
+                  "qualifier_value": "decreased"
+                },
+                {
+                  "qualifier_type_id": "biolink:object_aspect_qualifier",
+                  "qualifier_value": "activity_or_abundance"
+                },
+                {
+                  "qualifier_type_id": "biolink:qualified_predicate",
+                  "qualifier_value": "biolink:causes"
+                }
+              ]
+            },
+            {
+              "qualifier_set": [
+                {
+                  "qualifier_type_id": "biolink:object_direction_qualifier",
+                  "qualifier_value": "decreased"
+                },
+                {
+                  "qualifier_type_id": "biolink:object_aspect_qualifier",
+                  "qualifier_value": "expression"
+                },
+                {
+                  "qualifier_type_id": "biolink:qualified_predicate",
+                  "qualifier_value": "biolink:causes"
+                }
+              ]
+            },
+            {
+              "qualifier_set": [
+                {
+                  "qualifier_type_id": "biolink:object_direction_qualifier",
+                  "qualifier_value": "decreased"
+                },
+                {
+                  "qualifier_type_id": "biolink:object_aspect_qualifier",
+                  "qualifier_value": "secretion"
+                },
+                {
+                  "qualifier_type_id": "biolink:qualified_predicate",
+                  "qualifier_value": "biolink:causes"
+                }
+              ]
+            },
+            {
+              "qualifier_set": [
+                {
+                  "qualifier_type_id": "biolink:object_direction_qualifier",
+                  "qualifier_value": "increased"
+                },
+                {
+                  "qualifier_type_id": "biolink:object_aspect_qualifier",
+                  "qualifier_value": "degradation"
+                },
+                {
+                  "qualifier_type_id": "biolink:qualified_predicate",
+                  "qualifier_value": "biolink:causes"
+                }
+              ]
+            }
           ]
         },
         "e3": {
