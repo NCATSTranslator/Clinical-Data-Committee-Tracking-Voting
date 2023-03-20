@@ -4,16 +4,13 @@
       "nodes": {
         "n0": {
           "ids": [
-            "MONDO:0009061,MONDO:0004979"
+            "MONDO:0009061","MONDO:0004979"
           ],
           "categories": [
-            ["biolink:ChemicalEntity, biolink:Drug, biolink:SmallMolecule"]
+            "biolink:ChemicalEntity", "biolink:Drug", "biolink:SmallMolecule"
           ]
         },
         "n1": {
-          "ids": [
-            ""
-          ],
           "categories": [
             "biolink:DiseaseOrPhenotypicFeature"
           ]
