@@ -12,7 +12,7 @@
 				},
 				"n1": {
 					"ids": [
-						"MONDO:0009061"
+						"MONDO:0009061","MONDO:0004979"
 					],
 					"categories": [
 						"biolink:Disease"
