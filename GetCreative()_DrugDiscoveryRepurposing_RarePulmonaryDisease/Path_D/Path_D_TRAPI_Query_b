@@ -1,0 +1,38 @@
+{
+	"message": {
+		"query_graph": {
+			"nodes": {
+				"n0": {
+					"ids": null,
+					"categories": [
+						"biolink:ChemicalEntity"
+					],
+					"is_set": false,
+					"constraints": []
+				},
+				"n1": {
+					"ids": [
+						"MONDO:0009061"
+					],
+					"categories": [
+						"biolink:Disease"
+					],
+					"is_set": false,
+					"constraints": []
+				}
+			},
+			"edges": {
+				"e0": {
+					"subject": "n0",
+					"object": "n1",
+					"knowledge_type": null,
+					"predicates": [
+						"biolink:correlated_with"
+					],
+					"attribute_constraints": [],
+					"qualifier_constraints": []
+				}
+			}
+		}
+	}
+}
