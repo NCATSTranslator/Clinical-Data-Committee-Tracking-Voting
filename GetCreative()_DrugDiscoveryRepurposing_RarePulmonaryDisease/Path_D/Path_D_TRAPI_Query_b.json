@@ -27,7 +27,7 @@
 					"object": "n1",
 					"knowledge_type": null,
 					"predicates": [
-						"biolink:correlated_with"
+						"biolink:correlated_with","biolink:associated_with_increased_likelihood_of", "biolink:associated_with_decreased_likelihood_of"
 					],
 					"attribute_constraints": [],
 					"qualifier_constraints": []
