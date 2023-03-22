@@ -7,12 +7,12 @@
             "MONDO:0009061","MONDO:0004979"
           ],
           "categories": [
-            "biolink:Disease"
+            "biolink:ChemicalEntity", "biolink:Drug", "biolink:SmallMolecule"
           ]
         },
         "n1": {
           "categories": [
-            "biolink:ChemicalEntity","biolink:Drug","biolink:SmallMolecule"
+            "biolink:DiseaseOrPhenotypicFeature"
           ]
         }
       },
@@ -26,5 +26,10 @@
         }
       }
     }
-  }
+  },
+  "workflow": [
+    {
+      "id": "lookup"
+    }
+  ]
 }
