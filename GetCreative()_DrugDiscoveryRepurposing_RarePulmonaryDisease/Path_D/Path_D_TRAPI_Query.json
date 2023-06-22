@@ -27,9 +27,16 @@
       }
     }
   },
-  "workflow": [
+"workflow": [
     {
-      "id": "lookup"
+      "id": "lookup",
+      "runner_parameters": {
+        "allowlist": [
+          "infores:automat-icees-kg",
+          "infores:cohd",
+          "infores:biothings-multiomics-ehr-risk"
+        ]
+      }
     }
   ]
 }
