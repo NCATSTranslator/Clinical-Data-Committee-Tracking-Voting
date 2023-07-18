@@ -1,0 +1,1 @@
+Simple 1-hop query that asks OpenPredict for drugs that are predicted to treat the disease 
