@@ -1,4 +1,41 @@
 {
+    "workflow": [
+        {
+            "id": "fill",
+            "parameters": {
+                "allowlist": [],
+                "qedge_keys": [
+                    "e0"
+                ]
+            }
+        },
+        {
+            "id": "fill",
+            "parameters": {
+                "allowlist": [
+                    "infores:connections-hypothesis"
+                ],
+                "qedge_keys": [
+                    "e1"
+                ]
+            }
+        },
+        {
+            "id": "fill",
+            "parameters": {
+                "allowlist": [],
+                "qedge_keys": [
+                    "e2"
+                ]
+            }
+        },
+        {
+            "id": "bind"
+        },
+        {
+            "id": "score"
+        }
+    ],
     "message": {
         "query_graph": {
             "nodes": {
