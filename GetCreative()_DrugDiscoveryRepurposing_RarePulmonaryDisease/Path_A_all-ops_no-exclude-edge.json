@@ -1,0 +1,279 @@
+{
+    "workflow":
+    [
+        {
+            "id": "fill",
+            "parameters":
+            {
+                "allowlist":
+                [
+                    "infores:cohd",
+                    "infores:automat-icees-kg"
+                ],
+                "qedge_keys":
+                [
+                    "e0"
+                ]
+            }
+        },
+        {
+            "id": "fill",
+            "parameters":
+            {
+                "allowlist": [],
+                "qedge_keys":
+                [
+                    "e1",
+                    "e2",
+                    "e4"
+                ]
+            }
+        },
+        {
+            "id": "bind"
+        },
+        {
+            "id": "complete_results"
+        },
+        {
+            "id": "score"
+        },
+        {
+            "id": "filter_results_top_n",
+            "parameters":
+            {
+                "max_results": 100
+            }
+        }
+    ],
+    "message":
+    {
+        "query_graph":
+        {
+            "edges":
+            {
+                "e0":
+                {
+                    "exclude": false,
+                    "predicates":
+                    [
+                        "biolink:correlated_with",
+                        "biolink:associated_with_likelihood_of"
+                    ],
+                    "subject": "n0",
+                    "object": "n1"
+                },
+                "e1":
+                {
+                    "exclude": false,
+                    "subject": "n1",
+                    "object": "n2",
+                    "predicates":
+                    [
+                        "biolink:affects"
+                    ],
+                    "qualifier_constraints":
+                    [
+                        {
+                            "qualifier_set":
+                            [
+                                {
+                                    "qualifier_type_id": "biolink:object_direction_qualifier",
+                                    "qualifier_value": "increased"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:object_aspect_qualifier",
+                                    "qualifier_value": "activity_or_abundance"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:qualified_predicate",
+                                    "qualifier_value": "biolink:causes"
+                                }
+                            ]
+                        },
+                        {
+                            "qualifier_set":
+                            [
+                                {
+                                    "qualifier_type_id": "biolink:object_direction_qualifier",
+                                    "qualifier_value": "increased"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:object_aspect_qualifier",
+                                    "qualifier_value": "expression"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:qualified_predicate",
+                                    "qualifier_value": "biolink:causes"
+                                }
+                            ]
+                        },
+                        {
+                            "qualifier_set":
+                            [
+                                {
+                                    "qualifier_type_id": "biolink:object_direction_qualifier",
+                                    "qualifier_value": "increased"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:object_aspect_qualifier",
+                                    "qualifier_value": "secretion"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:qualified_predicate",
+                                    "qualifier_value": "biolink:causes"
+                                }
+                            ]
+                        },
+                        {
+                            "qualifier_set":
+                            [
+                                {
+                                    "qualifier_type_id": "biolink:object_direction_qualifier",
+                                    "qualifier_value": "decreased"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:object_aspect_qualifier",
+                                    "qualifier_value": "degradation"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:qualified_predicate",
+                                    "qualifier_value": "biolink:causes"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "e2":
+                {
+                    "exclude": false,
+                    "subject": "n3",
+                    "object": "n2",
+                    "predicates":
+                    [
+                        "biolink:affects"
+                    ],
+                    "qualifier_constraints":
+                    [
+                        {
+                            "qualifier_set":
+                            [
+                                {
+                                    "qualifier_type_id": "biolink:object_direction_qualifier",
+                                    "qualifier_value": "increased"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:object_aspect_qualifier",
+                                    "qualifier_value": "activity_or_abundance"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:qualified_predicate",
+                                    "qualifier_value": "biolink:causes"
+                                }
+                            ]
+                        },
+                        {
+                            "qualifier_set":
+                            [
+                                {
+                                    "qualifier_type_id": "biolink:object_direction_qualifier",
+                                    "qualifier_value": "increased"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:object_aspect_qualifier",
+                                    "qualifier_value": "expression"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:qualified_predicate",
+                                    "qualifier_value": "biolink:causes"
+                                }
+                            ]
+                        },
+                        {
+                            "qualifier_set":
+                            [
+                                {
+                                    "qualifier_type_id": "biolink:object_direction_qualifier",
+                                    "qualifier_value": "increased"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:object_aspect_qualifier",
+                                    "qualifier_value": "secretion"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:qualified_predicate",
+                                    "qualifier_value": "biolink:causes"
+                                }
+                            ]
+                        },
+                        {
+                            "qualifier_set":
+                            [
+                                {
+                                    "qualifier_type_id": "biolink:object_direction_qualifier",
+                                    "qualifier_value": "decreased"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:object_aspect_qualifier",
+                                    "qualifier_value": "degradation"
+                                },
+                                {
+                                    "qualifier_type_id": "biolink:qualified_predicate",
+                                    "qualifier_value": "biolink:causes"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "e4":
+                {
+                    "exclude": false,
+                    "subject": "n2",
+                    "object": "n0",
+                    "predicates":
+                    [
+                        "biolink:contributes_to",
+                        "biolink:associated_with",
+                        "biolink:gene_associated_with_condition"
+                    ]
+                }
+            },
+            "nodes":
+            {
+                "n0":
+                {
+                    "ids":
+                    [
+                        "MONDO:0009061"
+                    ],
+                    "is_set": false
+                },
+                "n1":
+                {
+                    "categories":
+                    [
+                        "biolink:ChemicalEntity"
+                    ],
+                    "is_set": true
+                },
+                "n2":
+                {
+                    "categories":
+                    [
+                        "biolink:Gene",
+                        "biolink:Protein"
+                    ],
+                    "is_set": true
+                },
+                "n3":
+                {
+                    "categories":
+                    [
+                        "biolink:ChemicalEntity"
+                    ],
+                    "is_set": false
+                }
+            }
+        }
+    }
+}
