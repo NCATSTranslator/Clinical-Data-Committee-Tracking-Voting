@@ -19,7 +19,6 @@
                 "qedge_keys": [
                     "e1",
                     "e2",
-                    "e3",
                     "e4"
                 ]
             }
@@ -200,15 +199,6 @@
                         }
                     ]
                 },
-                "e3": {
-                    "exclude": true,
-                    "predicates": [
-                        "biolink:correlated_with",
-                        "biolink:associated_with_likelihood_of"
-                    ],
-                    "subject": "n3",
-                    "object": "n4"
-                },
                 "e4": {
                     "exclude": false,
                     "subject": "n2",
@@ -229,26 +219,21 @@
                 },
                 "n1": {
                     "categories": [
-                        "biolink:ChemicalEntity"
+                        "biolink:MolecularEntity",
+                        "biolink:EnvironmentalExposure"
                     ],
-                    "is_set": false
+                    "is_set": true
                 },
                 "n2": {
                     "categories": [
                         "biolink:Gene",
                         "biolink:Protein"
                     ],
-                    "is_set": false
+                    "is_set": true
                 },
                 "n3": {
                     "categories": [
                         "biolink:ChemicalEntity"
-                    ],
-                    "is_set": false
-                },
-                "n4": {
-                    "ids": [
-                        "MONDO:0009061"
                     ],
                     "is_set": false
                 }

@@ -1,28 +1,22 @@
 {
-    "workflow":
-    [
+    "workflow": [
         {
             "id": "fill",
-            "parameters":
-            {
-                "allowlist":
-                [
+            "parameters": {
+                "allowlist": [
                     "infores:cohd",
                     "infores:automat-icees-kg"
                 ],
-                "qedge_keys":
-                [
+                "qedge_keys": [
                     "e0"
                 ]
             }
         },
         {
             "id": "fill",
-            "parameters":
-            {
+            "parameters": {
                 "allowlist": [],
-                "qedge_keys":
-                [
+                "qedge_keys": [
                     "e1",
                     "e2",
                     "e4"
@@ -40,46 +34,36 @@
         },
         {
             "id": "filter_results_top_n",
-            "parameters":
-            {
+            "parameters": {
                 "max_results": 100
             }
         }
     ],
-    "message":
-    {
-        "query_graph":
-        {
-            "edges":
-            {
-                "e0":
-                {
+    "message": {
+        "query_graph": {
+            "edges": {
+                "e0": {
                     "exclude": false,
-                    "predicates":
-                    [
+                    "predicates": [
                         "biolink:correlated_with",
                         "biolink:associated_with_likelihood_of"
                     ],
                     "subject": "n0",
                     "object": "n1"
                 },
-                "e1":
-                {
+                "e1": {
                     "exclude": false,
                     "subject": "n1",
                     "object": "n2",
-                    "predicates":
-                    [
+                    "predicates": [
                         "biolink:affects"
                     ],
-                    "qualifier_constraints":
-                    [
+                    "qualifier_constraints": [
                         {
-                            "qualifier_set":
-                            [
+                            "qualifier_set": [
                                 {
                                     "qualifier_type_id": "biolink:object_direction_qualifier",
-                                    "qualifier_value": "increased"
+                                    "qualifier_value": "decreased"
                                 },
                                 {
                                     "qualifier_type_id": "biolink:object_aspect_qualifier",
@@ -92,11 +76,10 @@
                             ]
                         },
                         {
-                            "qualifier_set":
-                            [
+                            "qualifier_set": [
                                 {
                                     "qualifier_type_id": "biolink:object_direction_qualifier",
-                                    "qualifier_value": "increased"
+                                    "qualifier_value": "decreased"
                                 },
                                 {
                                     "qualifier_type_id": "biolink:object_aspect_qualifier",
@@ -109,11 +92,10 @@
                             ]
                         },
                         {
-                            "qualifier_set":
-                            [
+                            "qualifier_set": [
                                 {
                                     "qualifier_type_id": "biolink:object_direction_qualifier",
-                                    "qualifier_value": "increased"
+                                    "qualifier_value": "decreased"
                                 },
                                 {
                                     "qualifier_type_id": "biolink:object_aspect_qualifier",
@@ -126,11 +108,10 @@
                             ]
                         },
                         {
-                            "qualifier_set":
-                            [
+                            "qualifier_set": [
                                 {
                                     "qualifier_type_id": "biolink:object_direction_qualifier",
-                                    "qualifier_value": "decreased"
+                                    "qualifier_value": "increased"
                                 },
                                 {
                                     "qualifier_type_id": "biolink:object_aspect_qualifier",
@@ -144,23 +125,19 @@
                         }
                     ]
                 },
-                "e2":
-                {
+                "e2": {
                     "exclude": false,
                     "subject": "n3",
                     "object": "n2",
-                    "predicates":
-                    [
+                    "predicates": [
                         "biolink:affects"
                     ],
-                    "qualifier_constraints":
-                    [
+                    "qualifier_constraints": [
                         {
-                            "qualifier_set":
-                            [
+                            "qualifier_set": [
                                 {
                                     "qualifier_type_id": "biolink:object_direction_qualifier",
-                                    "qualifier_value": "increased"
+                                    "qualifier_value": "decreased"
                                 },
                                 {
                                     "qualifier_type_id": "biolink:object_aspect_qualifier",
@@ -173,11 +150,10 @@
                             ]
                         },
                         {
-                            "qualifier_set":
-                            [
+                            "qualifier_set": [
                                 {
                                     "qualifier_type_id": "biolink:object_direction_qualifier",
-                                    "qualifier_value": "increased"
+                                    "qualifier_value": "decreased"
                                 },
                                 {
                                     "qualifier_type_id": "biolink:object_aspect_qualifier",
@@ -190,11 +166,10 @@
                             ]
                         },
                         {
-                            "qualifier_set":
-                            [
+                            "qualifier_set": [
                                 {
                                     "qualifier_type_id": "biolink:object_direction_qualifier",
-                                    "qualifier_value": "increased"
+                                    "qualifier_value": "decreased"
                                 },
                                 {
                                     "qualifier_type_id": "biolink:object_aspect_qualifier",
@@ -207,11 +182,10 @@
                             ]
                         },
                         {
-                            "qualifier_set":
-                            [
+                            "qualifier_set": [
                                 {
                                     "qualifier_type_id": "biolink:object_direction_qualifier",
-                                    "qualifier_value": "decreased"
+                                    "qualifier_value": "increased"
                                 },
                                 {
                                     "qualifier_type_id": "biolink:object_aspect_qualifier",
@@ -225,50 +199,40 @@
                         }
                     ]
                 },
-                "e4":
-                {
+                "e4": {
                     "exclude": false,
                     "subject": "n2",
                     "object": "n0",
-                    "predicates":
-                    [
+                    "predicates": [
                         "biolink:contributes_to",
                         "biolink:associated_with",
                         "biolink:gene_associated_with_condition"
                     ]
                 }
             },
-            "nodes":
-            {
-                "n0":
-                {
-                    "ids":
-                    [
+            "nodes": {
+                "n0": {
+                    "ids": [
                         "MONDO:0009061"
                     ],
                     "is_set": false
                 },
-                "n1":
-                {
-                    "categories":
-                    [
-                        "biolink:ChemicalEntity"
+                "n1": {
+                    "categories": [
+                        "biolink:MolecularEntity",
+                        "biolink:EnvironmentalExposure"
                     ],
                     "is_set": true
                 },
-                "n2":
-                {
-                    "categories":
-                    [
+                "n2": {
+                    "categories": [
                         "biolink:Gene",
                         "biolink:Protein"
                     ],
                     "is_set": true
                 },
-                "n3":
-                {
-                    "categories":
-                    [
+                "n3": {
+                    "categories": [
                         "biolink:ChemicalEntity"
                     ],
                     "is_set": false
