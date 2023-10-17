@@ -2,7 +2,11 @@
 
 This path of the CQS MVP1 workflow is intended to first identify biolink:ChemicalEntity associated with a biolink:Disease input CURIE for a rare pulmonary disease and targeting the clinical KPs (COHD, icees-kg, Multiomics EHR Risk Provider), then identify biolink:Gene associated with those chemical entities, and finally identify new chemical entities that are not in the first set of chemical entities but that act on the same gene set.
 
-The Path A TRAPI query was re-engineered by Abrar U. and Max W. in October 2023 to remove dependencies on sequential fill operations (fill->bind->complete_results) and reduce the complexity such that the query relies on only a lookup operation (lookup->bind->complete_results) with an allowlist parameter specified on e0 to target the clinical KPs.
+The Path A TRAPI query was re-engineered by Abrar U. and Max W. in October 2023 to remove dependencies on sequential fill operations (fill->bind->complete_results) and reduce the complexity such that the query relies on only a lookup operation (lookup->bind->complete_results) with an allowlist parameter specified on e0 to target the clinical KPs. The re-engineered Path A TRAPI query runs successfully when using the following input CURIES:
+
+Asthma: MONDO:0004979
+CF: MONDO:0009061
+EDS: MONDO:0020066
 
 ## Path A variations - DEPRECATED, 10.17.2023
 
