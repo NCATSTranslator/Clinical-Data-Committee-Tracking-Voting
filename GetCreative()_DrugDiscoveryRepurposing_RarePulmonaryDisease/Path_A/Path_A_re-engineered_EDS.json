@@ -1,0 +1,70 @@
+{
+    "message": {
+        "query_graph": {
+            "edges": {
+                "e0": {
+                    "predicates": [
+                        "biolink:correlated_with",
+                        "biolink:associated_with_likelihood_of"
+                    ],
+                    "subject": "n0",
+                    "object": "n1",
+                    "provided_by": {
+                        "allowlist": ["infores:automat-icees-kg", "infores:cohd"]
+                    }
+                },
+                "e1": {
+                    "subject": "n1",
+                    "object": "n2",
+                    "predicates": [
+                        "biolink:affects"
+                    ]
+                },
+                "e2": {
+                    "subject": "n3",
+                    "object": "n2",
+                    "predicates": [
+                        "biolink:affects"
+                    ]
+                },
+                "e4": {
+                    "subject": "n2",
+                    "object": "n0",
+                    "predicates": [
+                        "biolink:contributes_to",
+                        "biolink:associated_with",
+                        "biolink:gene_associated_with_condition"
+                    ]
+                }
+            },
+            "nodes": {
+                "n0": {
+                    "ids": [
+                        "MONDO:0020068"
+                    ],
+                    "is_set": false
+                },
+                "n1": {
+                    "categories": [
+                        "biolink:MolecularEntity",
+                        "biolink:EnvironmentalExposure"
+                    ],
+                    "is_set": false
+                },
+                "n2": {
+                    "categories": [
+                        "biolink:Gene",
+                        "biolink:Protein"
+                    ],
+                    "is_set": false
+                },
+                "n3": {
+                    "categories": [
+                        "biolink:ChemicalEntity"
+                    ],
+                    "is_set": false
+                }
+            }
+        }
+    }
+}
