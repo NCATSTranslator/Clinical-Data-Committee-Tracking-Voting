@@ -93,7 +93,7 @@
                         "biolink:affects"
                     ]
                 },
-                "e4": {
+                "e3": {
                     "subject": "n2",
                     "object": "n0",
                     "predicates": [
