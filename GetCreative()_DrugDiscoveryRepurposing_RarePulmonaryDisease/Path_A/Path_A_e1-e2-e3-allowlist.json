@@ -17,15 +17,21 @@
                     "subject": "n1",
                     "object": "n2",
                     "predicates": [
-                        "biolink:interacts_with"
+                        "biolink:affects", "biolink:physically_interacts_with"
                     ]
+                       "provided_by": {
+                        "allowlist": ["infores:text-mining-kp", "infores:molepro"]
+                    }             
                 },
                 "e2": {
                     "subject": "n3",
                     "object": "n2",
                     "predicates": [
-                        "biolink:interacts_with"
+                        "biolink:affects", "biolink:physically_interacts_with"
                     ]
+                       "provided_by": {
+                        "allowlist": ["infores:text-mining-kp", "infores:molepro"]
+                    }        
                 },
                 "e3": {
                     "subject": "n2",
