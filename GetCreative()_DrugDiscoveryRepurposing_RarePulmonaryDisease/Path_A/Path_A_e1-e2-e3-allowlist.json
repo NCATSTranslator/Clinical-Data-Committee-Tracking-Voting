@@ -10,28 +10,39 @@
                     "subject": "n0",
                     "object": "n1",
                     "provided_by": {
-                        "allowlist": ["infores:automat-icees-kg", "infores:cohd"]
+                        "allowlist": [
+                            "infores:automat-icees-kg",
+                            "infores:cohd"
+                        ]
                     }
                 },
                 "e1": {
                     "subject": "n1",
                     "object": "n2",
                     "predicates": [
-                        "biolink:affects", "biolink:physically_interacts_with"
-                    ]
-                       "provided_by": {
-                        "allowlist": ["infores:text-mining-kp", "infores:molepro"]
-                    }             
+                        "biolink:affects",
+                        "biolink:physically_interacts_with"
+                    ],
+                    "provided_by": {
+                        "allowlist": [
+                            "infores:text-mining-kp",
+                            "infores:molepro"
+                        ]
+                    }
                 },
                 "e2": {
                     "subject": "n3",
                     "object": "n2",
                     "predicates": [
-                        "biolink:affects", "biolink:physically_interacts_with"
-                    ]
-                       "provided_by": {
-                        "allowlist": ["infores:text-mining-kp", "infores:molepro"]
-                    }        
+                        "biolink:affects",
+                        "biolink:physically_interacts_with"
+                    ],
+                    "provided_by": {
+                        "allowlist": [
+                            "infores:text-mining-kp",
+                            "infores:molepro"
+                        ]
+                    }
                 },
                 "e3": {
                     "subject": "n2",
