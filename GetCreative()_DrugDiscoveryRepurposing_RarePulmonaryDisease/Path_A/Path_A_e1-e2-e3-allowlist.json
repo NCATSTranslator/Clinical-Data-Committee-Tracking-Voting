@@ -1,4 +1,15 @@
 {
+    "workflow": [
+        {
+            "id": "lookup",
+            "runner_parameters": {
+                "allowlist": ["infores:aragorn"]
+            }
+        },
+        {
+            "id":"score"
+        }
+    ],
     "message": {
         "query_graph": {
             "edges": {
@@ -25,7 +36,7 @@
                     ],
                     "provided_by": {
                         "allowlist": [
-                            "infores:text-mining-kp",
+                            "infores:text-mining-provider-cooccurrence",
                             "infores:molepro"
                         ]
                     }
@@ -39,7 +50,7 @@
                     ],
                     "provided_by": {
                         "allowlist": [
-                            "infores:text-mining-kp",
+                            "infores:text-mining-provider-cooccurrence",
                             "infores:molepro"
                         ]
                     }
