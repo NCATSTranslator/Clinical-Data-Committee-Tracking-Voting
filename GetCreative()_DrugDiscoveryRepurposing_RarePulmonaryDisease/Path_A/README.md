@@ -2,13 +2,20 @@
 
 This path of the CQS MVP1 workflow is intended to first identify biolink:ChemicalEntity associated with a biolink:Disease input CURIE for a rare pulmonary disease and targeting the clinical KPs (COHD, icees-kg, Multiomics EHR Risk Provider), then identify genes affected by those chemical entities, and finally identify new chemical entities that are not in the first set of chemical entities but that affect the same gene set and are related to the input CURIE.
 
-The Path A TRAPI query was re-engineered by Abrar M. and Max W. in October 2023 to remove dependencies on sequential fill operations (fill->bind->complete_results) and reduce the complexity such that the query relies on only a lookup operation (lookup->bind->complete_results) with an allowlist parameter specified on e0 to target the clinical KPs. The re-engineered Path A TRAPI query runs successfully when using the following input CURIES:
+The Path A TRAPI query was re-engineered by Abrar M. and Max W. in October 2023 to remove dependencies on sequential fill operations (fill->bind->complete_results) and reduce the complexity such that the query relies on only a lookup operation (lookup->bind->complete_results) with an allowlist parameter specified on e0 to target the clinical KPs. The re-engineered Path A TRAPI query runs successfully when using the following input CURIES: Asthma: MONDO:0004979; CF: MONDO:0009061; and EDS: MONDO:0020066.
 
-Asthma: MONDO:0004979
+The query has since been refined to (1) improve the quality of answers and (2) constrain the responses to each hop via allowlist parameters. In addition, timeout issues will be addressed by caching responses to the full workflow in ARAGORN. The complete list of input CURIEs for testing is:
 
-CF: MONDO:0009061
+    asthma (MONDO:0004979)*
+    primary ciliary dyskinesia (MONDO:0016575)*
+    cystic fibrosis (MONDO:0009061)*
+    idiopathic bronchiectasis (MONDO:0018956)
+    lymphangioleiomyomatosis (MONDO:0011705)
+    idiopathic pulmonary fibrosis (MONDO:0008345)
+    EDS: MONDO:0020066*
 
-EDS: MONDO:0020066
+   **CURIEs that are starred will be prioritized*
+
 
 ## Path A variations - DEPRECATED, 10.17.2023
 
