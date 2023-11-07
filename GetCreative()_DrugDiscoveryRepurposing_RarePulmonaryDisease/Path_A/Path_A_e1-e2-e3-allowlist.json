@@ -74,7 +74,7 @@
                 },
                 "n1": {
                     "categories": [
-                        "biolink:ChemicalEntity"
+                        "biolink:SmallMolecule"
                     ],
                     "is_set": false
                 },
