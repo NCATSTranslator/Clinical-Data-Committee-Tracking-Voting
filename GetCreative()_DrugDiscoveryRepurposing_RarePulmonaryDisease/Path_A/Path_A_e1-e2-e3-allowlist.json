@@ -36,7 +36,7 @@
                     ],
                     "provided_by": {
                         "allowlist": [
-                            "infores:text-mining-provider-cooccurrence",
+                            "infores:text-mining-provider-targeted",
                             "infores:molepro"
                         ]
                     }
@@ -50,7 +50,7 @@
                     ],
                     "provided_by": {
                         "allowlist": [
-                            "infores:text-mining-provider-cooccurrence",
+                            "infores:text-mining-provider-targeted",
                             "infores:molepro"
                         ]
                     }
