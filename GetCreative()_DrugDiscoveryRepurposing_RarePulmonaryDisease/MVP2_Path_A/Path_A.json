@@ -1,0 +1,63 @@
+{
+    "workflow": [
+        {
+            "id": "lookup",
+            "runner_parameters": {
+                "allowlist": ["infores:aragorn"]
+            }
+        },
+        {
+            "id":"score"
+        }
+    ],
+    "message": {
+        "query_graph": {
+            "edges": {
+                "e0": {
+                    "predicates": [
+                        "biolink:correlated_with"
+                    ],
+                    "subject": "n0",
+                    "object": "n1",
+                    "provided_by": {
+                        "allowlist": [
+                            "infores:automat-icees-kg"
+                        ]
+                    }
+                },
+                "e1": {
+                    "subject": "n1",
+                    "object": "n2",
+                    "predicates": [
+                        "biolink:affects"
+                    ],
+                    "provided_by": {
+                        "allowlist": [
+                            "infores:automat-cam-kp"
+                        ]
+                    }
+                }
+            },
+            "nodes": {
+                "n0": {
+                    "ids": [
+                        "MONDO:0009061"
+                    ],
+                    "is_set": false
+                },
+                "n1": {
+                    "categories": [
+                        "biolink:ChemicalEntity"
+                    ],
+                    "is_set": false
+                },
+                "n2": {
+                    "categories": [
+                        "biolink:GeneOrGeneProduct"
+                    ],
+                    "is_set": false
+                }
+            }
+        }
+    }
+}
