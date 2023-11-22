@@ -12,7 +12,7 @@ The query has since been refined to (1) improve the quality of answers and (2) c
     idiopathic bronchiectasis (MONDO:0018956)
     lymphangioleiomyomatosis (MONDO:0011705)
     idiopathic pulmonary fibrosis (MONDO:0008345)
-    EDS: MONDO:0020066*
+    EDS: (MONDO:0020066)*
 
    **CURIEs that are starred will be prioritized*
 
