@@ -13,7 +13,7 @@
                         "allowlist": [
                             "infores:automat-icees-kg",
                             "infores:cohd",
-                            "infores:multiomics-ehr-risk-provider
+                            "infores:multiomics-ehr-risk-provider"
                         ]
                     }
                 },
