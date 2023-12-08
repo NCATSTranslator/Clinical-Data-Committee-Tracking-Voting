@@ -6,13 +6,13 @@ The Path A TRAPI query was re-engineered by Abrar M. and Max W. in October 2023 
 
 The query has since been refined to (1) improve the quality of answers and (2) constrain the responses to each hop via allowlist parameters. In addition, timeout issues will be addressed by caching responses to the full workflow in ARAGORN. The complete list of input CURIEs for testing is:
 
-    asthma (MONDO:0004979)*
-    primary ciliary dyskinesia (MONDO:0016575)*
-    cystic fibrosis (MONDO:0009061)*
+    asthma (MONDO:0004979)
+    primary ciliary dyskinesia (MONDO:0016575)
+    cystic fibrosis (MONDO:0009061)
     idiopathic bronchiectasis (MONDO:0018956)
     lymphangioleiomyomatosis (MONDO:0011705)
     idiopathic pulmonary fibrosis (MONDO:0008345)
-    EDS: (MONDO:0020066)*
+    EDS: (MONDO:0020066)
 
    **CURIEs that are starred will be prioritized*
 
