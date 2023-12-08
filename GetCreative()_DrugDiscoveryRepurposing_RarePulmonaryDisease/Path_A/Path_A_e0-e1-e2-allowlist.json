@@ -1,4 +1,15 @@
 {
+    "workflow": [
+        {
+            "id": "lookup",
+            "runner_parameters": {
+                "allowlist": ["infores:aragorn"]
+            }
+        },
+        {
+            "id":"score"
+        }
+    ],
     "message": {
         "query_graph": {
             "edges": {
