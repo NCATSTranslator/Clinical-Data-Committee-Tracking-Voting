@@ -1,5 +1,7 @@
 # README
 
+## THIS FOLDER HAS BEEN DEPRECATED AND REPLACED WITH https://github.com/TranslatorSRI/CQS/tree/main/paths. 
+
 ## CDC get_creative() Drug Discovery/Repurposing Working: Rare Pulmonary Disease
 
 This folder is intended to suppport development of a Translator Clinical Data Committee (TCDC) drug discovery/repurposing get_creative() workflow, or a minimum set of SME-informed, curated, TRAPI queries.
