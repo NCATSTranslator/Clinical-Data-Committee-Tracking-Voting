@@ -1,6 +1,6 @@
 # README
 
-## THIS FOLDER HAS BEEN DEPRECATED AND REPLACED WITH https://github.com/TranslatorSRI/CQS/tree/main/paths. 
+## (`THIS FOLDER HAS BEEN DEPRECATED AND REPLACED WITH https://github.com/TranslatorSRI/CQS/tree/main/paths.`)
 
 ## CDC get_creative() Drug Discovery/Repurposing Working: Rare Pulmonary Disease
 
