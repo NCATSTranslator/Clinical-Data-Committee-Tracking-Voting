@@ -1,6 +1,6 @@
 ## README
 
-## MVP2 Path A
+## MVP2 Path A - DEPRECATED
 
 The purpose of the proposed MVP2 Path A workflow query is to leverage causal activity models (CAMs) as a source of mechanistic insights to explain clinical observations. The basic idea is to create multi-hop MVP2 queries that call both the clinical KPs and cam-kp. The initial focus is on two-hop queries, with the first hop asking for clinical observations from the clinical KPs (icees-kg, cohd, multiomics-ehr-risk-kp) and the second hop asking for biological mechanisms from cam-kp to explain those observations. The demonstration query asks for chemical entities associated with disease diagnoses in the real world and then asks for genes or gene products that are affected by those chemicals. This example may seem simplistic and not terribly novel; however, cam-kp contains CAM representations that provide mini-KGs or networks of annotations that together provide a more complete model of biological function than the separate annotations (e.g., a network of how different gene products work together in a biological pathway). _Caveat: cam-kp currently does not support Biolink qualifiers, but the service is expected to do so after implementing a fix within the next week or two._
 
